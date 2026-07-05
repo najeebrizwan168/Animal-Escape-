@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339ad02150a38c540b319715ad1f1b2a, type: 3}
+  m_Name: level1
+  m_EditorClassIdentifier: Assembly-CSharp::SavedDungeonLayout
+  areaWidth: 100
+  areaHeight: 100
+  rooms:
+  - position: {x: 68, y: 17}
+    size: {x: 9, y: 11}
+    isBossRoom: 1
+  - position: {x: 29, y: 39}
+    size: {x: 6, y: 6}
+    isBossRoom: 0
+  corridorTiles:
+  - {x: 32, y: 23}
+  - {x: 32, y: 24}
+  - {x: 32, y: 25}
+  - {x: 32, y: 26}
+  - {x: 32, y: 27}
+  - {x: 32, y: 28}
+  - {x: 32, y: 29}
+  - {x: 32, y: 30}
+  - {x: 32, y: 31}
+  - {x: 32, y: 32}
+  - {x: 32, y: 33}
+  - {x: 32, y: 34}
+  - {x: 32, y: 35}
+  - {x: 32, y: 36}
+  - {x: 32, y: 37}
+  - {x: 32, y: 38}
+  - {x: 33, y: 23}
+  - {x: 34, y: 23}
+  - {x: 35, y: 23}
+  - {x: 36, y: 23}
+  - {x: 37, y: 23}
+  - {x: 38, y: 23}
+  - {x: 39, y: 23}
+  - {x: 40, y: 23}
+  - {x: 41, y: 23}
+  - {x: 42, y: 23}
+  - {x: 43, y: 23}
+  - {x: 44, y: 23}
+  - {x: 45, y: 23}
+  - {x: 46, y: 23}
+  - {x: 47, y: 23}
+  - {x: 48, y: 23}
+  - {x: 49, y: 23}
+  - {x: 50, y: 23}
+  - {x: 51, y: 23}
+  - {x: 52, y: 23}
+  - {x: 53, y: 23}
+  - {x: 54, y: 23}
+  - {x: 55, y: 23}
+  - {x: 56, y: 23}
+  - {x: 57, y: 23}
+  - {x: 58, y: 23}
+  - {x: 59, y: 23}
+  - {x: 60, y: 23}
+  - {x: 61, y: 23}
+  - {x: 62, y: 23}
+  - {x: 63, y: 23}
+  - {x: 64, y: 23}
+  - {x: 65, y: 23}
+  - {x: 66, y: 23}
+  - {x: 67, y: 23}

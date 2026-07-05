@@ -1,0 +1,2524 @@
+{
+    "rootName": "Procedural House",
+    "rootNode": {
+        "name": "Procedural House",
+        "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/House 2.prefab",
+        "meshPath": "",
+        "meshName": "",
+        "materialPaths": [],
+        "localPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "localRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "localScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        },
+        "children": [
+            {
+                "name": "Door",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": -1.5821577310562134,
+                    "y": -0.08361487835645676,
+                    "z": 2.4354476928710939
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Door 001",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door_001",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": -1.5718261003494263,
+                    "y": -0.08361487835645676,
+                    "z": -1.1117151975631714
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Door 002",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door_002",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": 0.9124513268470764,
+                    "y": -0.08361487835645676,
+                    "z": 0.7696501612663269
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Door 003",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door_003",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.011.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": -5.033822059631348,
+                    "y": -0.08361487835645676,
+                    "z": 0.6465051174163818
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Ground",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "ground",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BLU.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.3.mat"
+                ],
+                "localPosition": {
+                    "x": 1.9689637422561646,
+                    "y": -1.6282609701156617,
+                    "z": 1.9201234579086304
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Wall",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat"
+                ],
+                "localPosition": {
+                    "x": 4.921680927276611,
+                    "y": 1.775041103363037,
+                    "z": -4.803996562957764
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 004 2",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_004_2",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": -2.0248100757598879,
+                            "y": -3.152125835418701,
+                            "z": -0.16053056716918946
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 001",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_001",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRN.5.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat"
+                ],
+                "localPosition": {
+                    "x": 0.42142242193222048,
+                    "y": 0.21635352075099946,
+                    "z": -4.989142417907715
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 005",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_005",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.000708953884895891,
+                            "y": -1.5934383869171143,
+                            "z": 0.02461501955986023
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 002",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_002",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat"
+                ],
+                "localPosition": {
+                    "x": 6.94649076461792,
+                    "y": 0.21635352075099946,
+                    "z": -4.989142417907715
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 004",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_004",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": -1.5934383869171143,
+                            "z": 0.02461501955986023
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 007",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_007",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRN.5.mat"
+                ],
+                "localPosition": {
+                    "x": 0.34342002868652346,
+                    "y": 0.21635352075099946,
+                    "z": -1.311852216720581
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 017",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_017",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.10308751463890076,
+                            "y": -1.5934383869171143,
+                            "z": 0.04347529262304306
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Wall 022",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_022",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.1060328334569931,
+                            "y": -1.5934383869171143,
+                            "z": -0.009023887105286122
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 009",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_009",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.010.mat"
+                ],
+                "localPosition": {
+                    "x": 9.155325889587403,
+                    "y": 0.21635352075099946,
+                    "z": 1.9236736297607422
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 008",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_008",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.024614226073026658,
+                            "y": -1.5934383869171143,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 012",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_012",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRN.5.mat"
+                ],
+                "localPosition": {
+                    "x": -2.6944591999053957,
+                    "y": 0.21635352075099946,
+                    "z": -4.989142417907715
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 011",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_011",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": -1.5934383869171143,
+                            "z": 0.02461581490933895
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 014",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_014",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRN.5.mat"
+                ],
+                "localPosition": {
+                    "x": -2.5870211124420168,
+                    "y": 0.21635352075099946,
+                    "z": -0.981299877166748
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 013",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_013",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.24046824872493745,
+                            "y": -1.5934383869171143,
+                            "z": -0.02461501955986023
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Wall 024",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_024",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.13785046339035035,
+                            "y": -1.5934383869171143,
+                            "z": 0.026941437274217607
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 016",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_016",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.010.mat"
+                ],
+                "localPosition": {
+                    "x": -5.178170204162598,
+                    "y": 0.21635352075099946,
+                    "z": 1.9242585897445679
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 015",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_015",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.024615416303277017,
+                            "y": -1.5934383869171143,
+                            "z": 3.967284953887429e-7
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 019",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_019",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.010.mat"
+                ],
+                "localPosition": {
+                    "x": 2.001627206802368,
+                    "y": 0.21635352075099946,
+                    "z": 8.836492538452149
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 018",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_018",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": -1.5934383869171143,
+                            "z": -0.024616209790110589
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 021",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_021",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/Material.010.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat"
+                ],
+                "localPosition": {
+                    "x": 2.001627206802368,
+                    "y": 0.21635352075099946,
+                    "z": 2.2924351692199709
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 020",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_020",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": 5.950927857156785e-7,
+                            "y": -1.5934383869171143,
+                            "z": -0.02461501955986023
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Wall 023",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_023",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.018735503777861596,
+                            "y": -1.5934383869171143,
+                            "z": 0.028727110475301744
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wall 025",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_025",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                ],
+                "localPosition": {
+                    "x": -1.5860559940338135,
+                    "y": -0.05020369961857796,
+                    "z": 2.294471025466919
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Wall 026",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_026",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                ],
+                "localPosition": {
+                    "x": -1.5860559940338135,
+                    "y": -0.05020369961857796,
+                    "z": -0.9758326411247253
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Wall 027",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_027",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                ],
+                "localPosition": {
+                    "x": 0.33542394638061526,
+                    "y": -0.05020369961857796,
+                    "z": 0.6471064686775208
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Wall 028",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_028",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.011.mat"
+                ],
+                "localPosition": {
+                    "x": -5.164111137390137,
+                    "y": -0.05020369961857796,
+                    "z": 0.6471064686775208
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Wall 007 (1)",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "wall_007",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/Material.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.012.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRN.5.mat"
+                ],
+                "localPosition": {
+                    "x": 1.0299999713897706,
+                    "y": 0.21635352075099946,
+                    "z": 5.289999961853027
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Wall 017",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_017",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.10308751463890076,
+                            "y": -1.5934383869171143,
+                            "z": 0.04347529262304306
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Wall 022",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "wall_022",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.012.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.1060328334569931,
+                            "y": -1.5934383869171143,
+                            "z": -0.009023887105286122
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Directional Light",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 5.619999885559082,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 101.59095764160156,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "SB_Door_Bedroom1_Lounge1",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": 0.3400000035762787,
+                    "y": -0.07999999821186066,
+                    "z": -3.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "SB_Door_Bedroom2_Kitchen",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": 0.3400000035762787,
+                    "y": -0.07999999821186066,
+                    "z": 5.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "SB_Door_Lounge2_Kitchen",
+                "prefabPath": "",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "door",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                ],
+                "localPosition": {
+                    "x": 4.75,
+                    "y": -0.07999999821186066,
+                    "z": 2.2899999618530275
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Bed",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Bed.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Bed",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                ],
+                "localPosition": {
+                    "x": -4.199999809265137,
+                    "y": -0.670236349105835,
+                    "z": -3.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Bed",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "bed",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.0778311938047409,
+                            "y": -0.11502910405397415,
+                            "z": -0.0004119033692404628
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Duvet",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "duvet",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BLU.4.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.36356261372566225,
+                            "y": 0.11626386642456055,
+                            "z": -0.00018556976283434778
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Pillow",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "pillow",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.947733461856842,
+                            "y": 0.13131771981716157,
+                            "z": -0.4359358847141266
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Pillow 001",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "pillow_001",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.9446098208427429,
+                            "y": 0.13131771981716157,
+                            "z": 0.5237234234809876
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Shelving",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "shelving",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 1.1000267267227173,
+                            "y": -0.42035457491874697,
+                            "z": -1.640481948852539
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Shelving 001",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "shelving_001",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 1.1000267267227173,
+                            "y": -0.42035457491874697,
+                            "z": 1.6530178785324097
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Wardrobe",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Wardrobe.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Wardrobe",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.3.mat"
+                ],
+                "localPosition": {
+                    "x": -2.700000047683716,
+                    "y": -0.06556224822998047,
+                    "z": -4.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Lamp",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Lamp.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Lamp",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.3.mat"
+                ],
+                "localPosition": {
+                    "x": -4.199999809265137,
+                    "y": -0.508899986743927,
+                    "z": -1.7999999523162842
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Tv Unit",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Tv Unit.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Tv_unit",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.6.mat"
+                ],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -1.0666332244873047,
+                    "z": -4.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Books 001",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "books_001",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/YLW.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/RED.2.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRN.6.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.5.mat",
+                            "Assets/StudioBillion/House Interior/Materials/TQZ.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.02307382971048355,
+                            "y": -0.07398540526628494,
+                            "z": -0.13104496896266938
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 0.9999998807907105,
+                            "z": 0.9999998807907105
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ps5",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "ps5",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BLU.3.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.0075598349794745449,
+                            "y": 0.0781363770365715,
+                            "z": -0.13210265338420869
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ps5 Cont",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "ps5_cont",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BLU.3.mat"
+                        ],
+                        "localPosition": {
+                            "x": 1.1432392597198487,
+                            "y": 0.38598597049713137,
+                            "z": -0.14005230367183686
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ps5 Cpnt",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "ps5_cpnt",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BLU.3.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.8532571196556091,
+                            "y": 0.3864404559135437,
+                            "z": -0.15498675405979157
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Television",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "television",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/GRY.4.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRY.2.mat"
+                        ],
+                        "localPosition": {
+                            "x": 2.479553096179643e-8,
+                            "y": 0.8805217742919922,
+                            "z": 7.934569907774858e-7
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Sofa",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Sofa.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "sofa",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.3.mat"
+                ],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -0.8730562329292297,
+                    "z": -1.7999999523162842
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Coffee Table",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Coffee Table.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "coffee_table",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.011.mat",
+                    "Assets/StudioBillion/House Interior/Materials/glass2.mat"
+                ],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -1.173200249671936,
+                    "z": -3.0999999046325685
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Carpet 002",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Carpet 002.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "carpet_002",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                ],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -1.3879464864730836,
+                    "z": -3.0999999046325685
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Vase",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Vase.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "vase",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/glass.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                ],
+                "localPosition": {
+                    "x": 8.5,
+                    "y": -1.0276988744735718,
+                    "z": -4.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Chess",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Chess.prefab",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "localPosition": {
+                    "x": -2.700000047683716,
+                    "y": -0.7762571573257446,
+                    "z": 0.6000000238418579
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Chess",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "chess",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.011.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BRW.014.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BRW.009.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BRW.015.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BRW.6.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.000006479899184341775,
+                            "y": 0.020124563947319986,
+                            "z": -0.000004496256678976351
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Chesstable",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "chesstable",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.6.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.0000032399495921708878,
+                            "y": -0.1729339212179184,
+                            "z": 0.0000022481283394881758
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Arcade",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Arcade.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Arcade",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/PNK.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/RED.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.4.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.011.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.4.mat",
+                    "Assets/StudioBillion/House Interior/Materials/RED.010.mat"
+                ],
+                "localPosition": {
+                    "x": -4.5,
+                    "y": -0.30537354946136477,
+                    "z": -0.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Vase",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Vase.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "vase",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/glass.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                ],
+                "localPosition": {
+                    "x": -4.5,
+                    "y": -1.0276988744735718,
+                    "z": 1.7999999523162842
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Tv Unit",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Tv Unit.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Tv_unit",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.6.mat"
+                ],
+                "localPosition": {
+                    "x": 8.5,
+                    "y": -1.0666332244873047,
+                    "z": 0.6000000238418579
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 270.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Books 001",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "books_001",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/YLW.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/RED.2.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRN.6.mat",
+                            "Assets/StudioBillion/House Interior/Materials/ORG.5.mat",
+                            "Assets/StudioBillion/House Interior/Materials/TQZ.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRY.1.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.02307382971048355,
+                            "y": -0.07398540526628494,
+                            "z": -0.13104496896266938
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 0.9999998807907105,
+                            "z": 0.9999998807907105
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ps5",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "ps5",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BLU.3.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.0075598349794745449,
+                            "y": 0.0781363770365715,
+                            "z": -0.13210265338420869
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ps5 Cont",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "ps5_cont",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BLU.3.mat"
+                        ],
+                        "localPosition": {
+                            "x": 1.1432392597198487,
+                            "y": 0.38598597049713137,
+                            "z": -0.14005230367183686
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ps5 Cpnt",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "ps5_cpnt",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                            "Assets/StudioBillion/House Interior/Materials/BLU.3.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.8532571196556091,
+                            "y": 0.3864404559135437,
+                            "z": -0.15498675405979157
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Television",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "television",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/GRY.4.mat",
+                            "Assets/StudioBillion/House Interior/Materials/GRY.2.mat"
+                        ],
+                        "localPosition": {
+                            "x": 2.479553096179643e-8,
+                            "y": 0.8805217742919922,
+                            "z": 7.934569907774858e-7
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Sofa2",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Sofa2.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "sofa2",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.3.mat"
+                ],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -0.8730562329292297,
+                    "z": 0.6000000238418579
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Armchair",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Armchair.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Armchair",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.3.mat"
+                ],
+                "localPosition": {
+                    "x": 6.0,
+                    "y": -0.9736696481704712,
+                    "z": -0.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 45.000003814697269,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Coffee Table",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Coffee Table.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "coffee_table",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.011.mat",
+                    "Assets/StudioBillion/House Interior/Materials/glass2.mat"
+                ],
+                "localPosition": {
+                    "x": 6.5,
+                    "y": -1.173200249671936,
+                    "z": 0.6000000238418579
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Carpet1",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Carpet1.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "carpet1",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/ORG.3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.2.mat"
+                ],
+                "localPosition": {
+                    "x": 6.5,
+                    "y": -1.3969067335128785,
+                    "z": 0.6000000238418579
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Bed",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Bed.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Bed",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                ],
+                "localPosition": {
+                    "x": -4.199999809265137,
+                    "y": -0.670236349105835,
+                    "z": 5.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Bed",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "bed",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.0778311938047409,
+                            "y": -0.11502910405397415,
+                            "z": -0.0004119033692404628
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Duvet",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "duvet",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BLU.4.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.36356261372566225,
+                            "y": 0.11626386642456055,
+                            "z": -0.00018556976283434778
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Pillow",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "pillow",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.947733461856842,
+                            "y": 0.13131771981716157,
+                            "z": -0.4359358847141266
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Pillow 001",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "pillow_001",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.9446098208427429,
+                            "y": 0.13131771981716157,
+                            "z": 0.5237234234809876
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Shelving",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "shelving",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 1.1000267267227173,
+                            "y": -0.42035457491874697,
+                            "z": -1.640481948852539
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Shelving 001",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "shelving_001",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/WHT.mat"
+                        ],
+                        "localPosition": {
+                            "x": 1.1000267267227173,
+                            "y": -0.42035457491874697,
+                            "z": 1.6530178785324097
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Closet",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Closet.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Closet",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                ],
+                "localPosition": {
+                    "x": -2.700000047683716,
+                    "y": -0.7776063680648804,
+                    "z": 8.199999809265137
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Desk",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Desk.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Desk",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.4.mat"
+                ],
+                "localPosition": {
+                    "x": -1.5,
+                    "y": -0.9652578234672546,
+                    "z": 4.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 270.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Pc Chair",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Pc Chair.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Pc_Chair",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/chair.mat",
+                    "Assets/StudioBillion/House Interior/Materials/chair.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/chair.1.mat"
+                ],
+                "localPosition": {
+                    "x": -2.200000047683716,
+                    "y": -0.8667411804199219,
+                    "z": 4.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Laptop",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Laptop.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Laptop",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/laptop_gray1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/laptop_screen.mat",
+                    "Assets/StudioBillion/House Interior/Materials/laptop_gray3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/laptop_gray2.mat"
+                ],
+                "localPosition": {
+                    "x": -1.5,
+                    "y": -0.49442124366760256,
+                    "z": 4.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 270.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Laptop Screen",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "laptop_screen",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/laptop_screen.mat",
+                            "Assets/StudioBillion/House Interior/Materials/laptop_gray1.mat",
+                            "Assets/StudioBillion/House Interior/Materials/laptop_gray3.mat",
+                            "Assets/StudioBillion/House Interior/Materials/laptop_logo.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.07936087250709534,
+                            "y": 0.1616235375404358,
+                            "z": -0.16440944373607636
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Lamp",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Lamp.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "Lamp",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/ORG.3.mat"
+                ],
+                "localPosition": {
+                    "x": -4.199999809265137,
+                    "y": -0.508899986743927,
+                    "z": 6.800000190734863
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Kitchen",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Kitchen.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "kitchen",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.4.mat"
+                ],
+                "localPosition": {
+                    "x": 8.5,
+                    "y": 0.00887763500213623,
+                    "z": 5.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 270.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Fridge",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Fridge.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "fridge",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/RED.008.mat",
+                    "Assets/StudioBillion/House Interior/Materials/fridge_gray.mat",
+                    "Assets/StudioBillion/House Interior/Materials/RED.2.mat"
+                ],
+                "localPosition": {
+                    "x": 8.5,
+                    "y": -0.30496788024902346,
+                    "z": 8.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 270.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Dinner Table",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Dinner Table.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "dinner_table",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/BRW.2.mat"
+                ],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -0.9784137606620789,
+                    "z": 5.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            },
+            {
+                "name": "Chairs",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Chairs.prefab",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "localPosition": {
+                    "x": 4.699999809265137,
+                    "y": -0.9264053106307983,
+                    "z": 5.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Chair1",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "chair1",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.7945218682289124,
+                            "y": -2.479553096179643e-8,
+                            "z": 0.4811283349990845
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Chair2",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "chair2",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                        ],
+                        "localPosition": {
+                            "x": -0.7945218682289124,
+                            "y": -2.479553096179643e-8,
+                            "z": -0.4811283349990845
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Chair3",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "chair3",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.7945218682289124,
+                            "y": 2.479553096179643e-8,
+                            "z": 0.4811283349990845
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Chair4",
+                        "prefabPath": "",
+                        "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                        "meshName": "chair4",
+                        "materialPaths": [
+                            "Assets/StudioBillion/House Interior/Materials/BRW.1.mat"
+                        ],
+                        "localPosition": {
+                            "x": 0.7945218682289124,
+                            "y": 2.479553096179643e-8,
+                            "z": -0.4811283349990845
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "Microwave",
+                "prefabPath": "Assets/StudioBillion/House Interior/Prefabs/Microwave.prefab",
+                "meshPath": "Assets/StudioBillion/House Interior/Models/House.fbx",
+                "meshName": "microwave",
+                "materialPaths": [
+                    "Assets/StudioBillion/House Interior/Materials/GRY.3.mat",
+                    "Assets/StudioBillion/House Interior/Materials/WHT.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.1.mat",
+                    "Assets/StudioBillion/House Interior/Materials/GRY.2.mat"
+                ],
+                "localPosition": {
+                    "x": 8.5,
+                    "y": -0.33871686458587649,
+                    "z": 6.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 270.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8306b579e4bf8304f9d8a20f97072b1d, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  generation:
+    minRooms: 1
+    maxRooms: 3
+    amountOfAdjacentRoomsToConnect: 1
+    minRoomWidth: 5
+    maxRoomWidth: 8
+    minRoomHeight: 8
+    maxRoomHeight: 12
+    minBossRoomWidth: 8
+    maxBossRoomWidth: 10
+    minBossRoomHeight: 10
+    maxBossRoomHeight: 12
+    areaWidth: 100
+    areaHeight: 100
+    minDistanceBetweenRooms: 1
+    walls:
+    - gameObject: {fileID: 5427172654386269210, guid: f1b456201f7e1574d881f301939a85d6, type: 3}
+      name: Wall
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    outerCorners:
+    - gameObject: {fileID: 696436432277967871, guid: 881baa43cd1560949b04dfde26893747, type: 3}
+      name: Outer Corner
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    innerCorners: []
+    deleteInnerCorners: 0
+    uCorners:
+    - gameObject: {fileID: 3197583449942763538, guid: aef390dd402b4da4dbc932f7685a0125, type: 3}
+      name: Square
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    squareCorners:
+    - gameObject: {fileID: 3746928169460061138, guid: 8fd16f9add3b6504a96a92177e5a8142, type: 3}
+      name: Square Corner
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    doors: []
+    doorsDisplacements: []
+    flooring:
+    - gameObject: {fileID: 2343648585065106810, guid: b866cd89eeadfa14183bdbb8272c67a8, type: 3}
+      name: Floor
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    player: {fileID: 5089241877578361006, guid: 4735638ee3d69f94dad50fd611033d80, type: 3}
+    minEnemiesPerRoom: 2
+    maxEnemiesPerRoom: 4
+    enemies: []
+    bosses: []
+    breakables:
+    - gameObject: {fileID: 9077720143176620344, guid: 9ef4ca2364c345b4ca4bd86692e8fe03, type: 3}
+      name: bed
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    staticObjects:
+    - gameObject: {fileID: 919132149155446097, guid: bbe64abbc81b39741946449b7bfced14, type: 3}
+      name: chair
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    - gameObject: {fileID: 2510814162510297302, guid: a35be9def8712c44b9a1a0f8e59c0c79, type: 3}
+      name: lamp
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    wallObjects:
+    - gameObject: {fileID: 911079839136840121, guid: 015d7e6e9859ab941a767b46b8f52f05, type: 3}
+      name: bari
+      yOffset: 0
+      rotationOffset: {x: 0, y: 0, z: 0}
+    wallObjConsequitiveDistance: 0
+    wallObjDisplacements:
+    - {x: 0, y: 0, z: 0}
+    cornerObjectsRate: 0
+    destroyablesRate: 0
+    middleObjects: []
+    middleObjectsRate: 0

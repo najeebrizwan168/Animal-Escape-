@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d5225c7254acc4f40b78d0eb20cf1901
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 182354
+  packageName: Dungeon Generator 3D
+  packageVersion: 1.01
+  assetPath: Assets/Dungeon Generator 3D/Scripts/Editor/Windows/GeneratorEditor.cs
+  uploadId: 423420

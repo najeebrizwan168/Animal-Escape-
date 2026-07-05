@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7cceb7c0d418a544287f1fd8bcde9421
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 182354
+  packageName: Dungeon Generator 3D
+  packageVersion: 1.01
+  assetPath: Assets/Dungeon Generator 3D/Demo/Prefabs/Generator.prefab
+  uploadId: 423420

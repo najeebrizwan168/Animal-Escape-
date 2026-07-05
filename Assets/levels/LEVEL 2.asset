@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339ad02150a38c540b319715ad1f1b2a, type: 3}
+  m_Name: LEVEL 2
+  m_EditorClassIdentifier: Assembly-CSharp::SavedDungeonLayout
+  areaWidth: 100
+  areaHeight: 100
+  rooms:
+  - position: {x: 70, y: 33}
+    size: {x: 9, y: 11}
+    isBossRoom: 1
+  - position: {x: 82, y: 34}
+    size: {x: 7, y: 11}
+    isBossRoom: 0
+  corridorTiles:
+  - {x: 79, y: 40}
+  - {x: 80, y: 40}
+  - {x: 81, y: 40}

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8306b579e4bf8304f9d8a20f97072b1d, type: 3}
+  m_Name: NewScripableObject
+  m_EditorClassIdentifier: Assembly-CSharp::GenerationSettings
+  generation:
+    minRooms: 0
+    maxRooms: 0
+    amountOfAdjacentRoomsToConnect: 0
+    minRoomWidth: 0
+    maxRoomWidth: 0
+    minRoomHeight: 0
+    maxRoomHeight: 0
+    minBossRoomWidth: 0
+    maxBossRoomWidth: 0
+    minBossRoomHeight: 0
+    maxBossRoomHeight: 0
+    areaWidth: 0
+    areaHeight: 0
+    minDistanceBetweenRooms: 0
+    walls: []
+    outerCorners: []
+    innerCorners: []
+    deleteInnerCorners: 0
+    uCorners: []
+    squareCorners: []
+    doors: []
+    doorsDisplacements: []
+    flooring: []
+    player: {fileID: 0}
+    minEnemiesPerRoom: 0
+    maxEnemiesPerRoom: 0
+    enemies: []
+    bosses: []
+    breakables: []
+    staticObjects: []
+    wallObjects: []
+    wallObjConsequitiveDistance: 0
+    wallObjDisplacements: []
+    cornerObjectsRate: 0
+    destroyablesRate: 0
+    middleObjects: []
+    middleObjectsRate: 0

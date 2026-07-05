@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339ad02150a38c540b319715ad1f1b2a, type: 3}
+  m_Name: test2
+  m_EditorClassIdentifier: Assembly-CSharp::SavedDungeonLayout
+  areaWidth: 100
+  areaHeight: 100
+  rooms:
+  - position: {x: 81, y: 36}
+    size: {x: 7, y: 10}
+    isBossRoom: 0
+  - position: {x: 29, y: 63}
+    size: {x: 9, y: 11}
+    isBossRoom: 1
+  corridorTiles:
+  - {x: 84, y: 46}
+  - {x: 84, y: 47}
+  - {x: 84, y: 48}
+  - {x: 84, y: 49}
+  - {x: 84, y: 50}
+  - {x: 84, y: 51}
+  - {x: 84, y: 52}
+  savedObjects:
+  - prefabName: bari
+    tag: Untagged
+    position: {x: 81, y: 0, z: 36}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    scale: {x: 0.6, y: 0.5, z: 0.5}
+    parentName: Room6(81, 36)
+  - prefabName: bari
+    tag: Untagged
+    position: {x: 81, y: 0, z: 45}
+    rotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
+    scale: {x: 0.6, y: 0.5, z: 0.5}
+    parentName: Room6(81, 36)
+  - prefabName: bari
+    tag: Untagged
+    position: {x: 87, y: 0, z: 36}
+    rotation: {x: -0, y: -0, z: -0, w: 1}
+    scale: {x: 0.6, y: 0.5, z: 0.5}
+    parentName: Room6(81, 36)
+  - prefabName: bari
+    tag: Untagged
+    position: {x: 87, y: 0, z: 45}
+    rotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
+    scale: {x: 0.6, y: 0.5, z: 0.5}
+    parentName: Room6(81, 36)

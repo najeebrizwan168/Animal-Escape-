@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3da32a191f62fae46a200a8d7ed6949a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 182354
+  packageName: Dungeon Generator 3D
+  packageVersion: 1.01
+  assetPath: Assets/Dungeon Generator 3D/Resources/GUIStyles/DungeonGeneration.guiskin
+  uploadId: 423420
