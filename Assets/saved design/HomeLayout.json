@@ -1,0 +1,2399 @@
+{
+    "rootName": "HomeLayout",
+    "rootNode": {
+        "name": "HomeLayout",
+        "prefabPath": "",
+        "meshPath": "",
+        "meshName": "",
+        "materialPaths": [],
+        "materials": [],
+        "localPosition": {
+            "x": -10.0,
+            "y": 0.0,
+            "z": -30.0
+        },
+        "localRotation": {
+            "x": 0.0,
+            "y": 271.7113952636719,
+            "z": 0.0
+        },
+        "localScale": {
+            "x": 0.6000000238418579,
+            "y": 0.4000000059604645,
+            "z": 0.699999988079071
+        },
+        "children": [
+            {
+                "name": "--- FLOOR ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Floor_Main",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Unlit/Texture",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": "Assets/Gemini_Generated_Image_fmfajrfmfajrfmfa (1).png"
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 7.5,
+                            "y": -0.10000000149011612,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 15.0,
+                            "y": 0.20000000298023225,
+                            "z": 10.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Floor_Balcony",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.7200000286102295,
+                                    "g": 0.6499999761581421,
+                                    "b": 0.550000011920929,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 16.0,
+                            "y": -0.10000000149011612,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 2.0,
+                            "y": 0.20000000298023225,
+                            "z": 4.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "--- EXTERIOR WALLS ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Ext_South",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 7.5,
+                            "y": 1.5,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 15.25,
+                            "y": 3.0,
+                            "z": 0.25
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ext_North",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 7.5,
+                            "y": 1.5,
+                            "z": 10.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 15.25,
+                            "y": 3.0,
+                            "z": 0.25
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ext_West",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.5,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 3.0,
+                            "z": 10.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ext_East_South",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 15.0,
+                            "y": 1.5,
+                            "z": 1.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 3.0,
+                            "z": 3.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Ext_East_North",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 15.0,
+                            "y": 1.5,
+                            "z": 8.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 3.0,
+                            "z": 3.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Balcony_South",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 16.0,
+                            "y": 1.5,
+                            "z": 3.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 2.0,
+                            "y": 3.0,
+                            "z": 0.25
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Balcony_North",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 16.0,
+                            "y": 1.5,
+                            "z": 7.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 2.0,
+                            "y": 3.0,
+                            "z": 0.25
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Balcony_East",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9399999976158142,
+                                    "g": 0.9200000166893005,
+                                    "b": 0.8799999952316284,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 17.0,
+                            "y": 1.5,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 3.0,
+                            "z": 4.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "--- INTERIOR WALLS ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Int_H_Center_A",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 1.0,
+                            "y": 1.5,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 2.0,
+                            "y": 3.0,
+                            "z": 0.20000000298023225
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_H_Center_B",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.599999904632568,
+                            "y": 1.5,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 2.799999952316284,
+                            "y": 3.0,
+                            "z": 0.20000000298023225
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_H_Center_C",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 7.75,
+                            "y": 1.5,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 3.5,
+                            "y": 3.0,
+                            "z": 0.20000000298023225
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_H_Center_D",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 12.850000381469727,
+                            "y": 1.5,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 4.300000190734863,
+                            "y": 3.0,
+                            "z": 0.20000000298023225
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_V_Kit_Liv_A",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 6.0,
+                            "y": 1.5,
+                            "z": 6.25
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.20000000298023225,
+                            "y": 3.0,
+                            "z": 2.5
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_V_Kit_Liv_B",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 6.0,
+                            "y": 1.5,
+                            "z": 9.350000381469727
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.20000000298023225,
+                            "y": 3.0,
+                            "z": 1.2999999523162842
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_V_Bath_Hall_A",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.5,
+                            "z": 1.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.20000000298023225,
+                            "y": 3.0,
+                            "z": 3.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_V_Bath_Hall_B",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.5,
+                            "z": 4.599999904632568
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.20000000298023225,
+                            "y": 3.0,
+                            "z": 0.800000011920929
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_V_Hall_Bed_A",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 8.5,
+                            "y": 1.5,
+                            "z": 1.25
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.20000000298023225,
+                            "y": 3.0,
+                            "z": 2.5
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Int_V_Hall_Bed_B",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.9100000262260437,
+                                    "g": 0.8899999856948853,
+                                    "b": 0.8500000238418579,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 8.5,
+                            "y": 1.5,
+                            "z": 4.349999904632568
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.20000000298023225,
+                            "y": 3.0,
+                            "z": 1.2999999523162842
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "--- ROOM LABELS (ref) ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Room_Kitchen",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 10.0,
+                            "y": 0.0,
+                            "z": 30.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "--- ROOM LABELS ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Room_Kitchen",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 3.0,
+                            "y": 2.0,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Room_LivingRoom",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 10.5,
+                            "y": 2.0,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Room_Bathroom",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 2.75,
+                            "y": 2.0,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Room_Hallway",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 7.0,
+                            "y": 2.0,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Room_Bedroom",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 11.75,
+                            "y": 2.0,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "Room_Balcony_Entrance",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 16.0,
+                            "y": 2.0,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "BlockedDoor_D1_Bathroom",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 88.28860473632813,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 2.5,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 0.375,
+                            "z": 3.1499998569488527
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 0.375,
+                            "z": 3.4499998092651369
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 0.375,
+                            "z": 3.75
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 0.375,
+                            "z": 4.049999713897705
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.125,
+                            "z": 3.1499998569488527
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.125,
+                            "z": 3.4499998092651369
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.125,
+                            "z": 3.75
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.125,
+                            "z": 4.049999713897705
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.875,
+                            "z": 3.1499998569488527
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.875,
+                            "z": 3.4499998092651369
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.875,
+                            "z": 3.75
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 1.875,
+                            "z": 4.049999713897705
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 2.625,
+                            "z": 3.1499998569488527
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 2.625,
+                            "z": 3.4499998092651369
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 2.625,
+                            "z": 3.75
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 2.625,
+                            "z": 4.049999713897705
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "BlockedDoor_D1_KitchenHall",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": -0.41999998688697817,
+                    "y": 0.0,
+                    "z": -0.009999999776482582
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 88.28860473632813,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 2.5,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -4.25,
+                            "y": 0.12880000472068788,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.809999942779541,
+                            "y": 0.12880000472068788,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.380000114440918,
+                            "y": 0.12880000472068788,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -2.940000057220459,
+                            "y": 0.12880000472068788,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -4.25,
+                            "y": 0.3865000009536743,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.809999942779541,
+                            "y": 0.3865000009536743,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.380000114440918,
+                            "y": 0.3865000009536743,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -2.940000057220459,
+                            "y": 0.3865000009536743,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -4.25,
+                            "y": 0.6442000269889832,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.809999942779541,
+                            "y": 0.6442000269889832,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.380000114440918,
+                            "y": 0.6442000269889832,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -2.940000057220459,
+                            "y": 0.6442000269889832,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -4.25,
+                            "y": 0.9018999934196472,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.809999942779541,
+                            "y": 0.9018999934196472,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -3.380000114440918,
+                            "y": 0.9018999934196472,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -2.940000057220459,
+                            "y": 0.9018999934196472,
+                            "z": 5.449999809265137
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.43533000349998476,
+                            "y": 0.25769999623298647,
+                            "z": 0.30000001192092898
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+}

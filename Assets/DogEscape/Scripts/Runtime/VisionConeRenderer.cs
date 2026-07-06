@@ -101,6 +101,10 @@ namespace DogEscape
             }
         }
 
+        [Header("Wall Clipping")]
+        public LayerMask wallLayer; // Assign "Wall" layer in Inspector
+        public float raycastHeight = 0.5f; // Height from which rays are cast (above ground)
+
         private void GenerateConeMesh(float angle, float radius)
         {
             int numVertices = segments + 2;
@@ -112,14 +116,32 @@ namespace DogEscape
             float angleStep = angle / segments;
             float startAngle = -angle / 2f;
 
+            // World origin for raycasts (hunter position at a small height so ray doesn't start underground)
+            Vector3 worldOrigin = transform.position + Vector3.up * raycastHeight;
+
             for (int i = 0; i <= segments; i++)
             {
                 float currentAngle = startAngle + i * angleStep;
                 float rad = currentAngle * Mathf.Deg2Rad;
                 
-                // Calculate position relative to forward (Z) axis
-                Vector3 dir = new Vector3(Mathf.Sin(rad), 0f, Mathf.Cos(rad));
-                vertices[i + 1] = dir * radius;
+                // Local direction relative to forward (Z) axis
+                Vector3 localDir = new Vector3(Mathf.Sin(rad), 0f, Mathf.Cos(rad));
+                
+                // Convert local direction to world direction using this object's rotation
+                Vector3 worldDir = transform.TransformDirection(localDir);
+                worldDir.y = 0f; // Keep ray flat on horizontal plane
+                worldDir.Normalize();
+
+                float effectiveRadius = radius;
+
+                // Raycast to check for walls
+                RaycastHit hit;
+                if (Physics.Raycast(worldOrigin, worldDir, out hit, radius, wallLayer))
+                {
+                    effectiveRadius = hit.distance;
+                }
+
+                vertices[i + 1] = localDir * effectiveRadius;
 
                 if (i < segments)
                 {

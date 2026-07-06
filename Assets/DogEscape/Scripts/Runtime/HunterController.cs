@@ -8,6 +8,8 @@ public class HunterController : MonoBehaviour
     public Transform pointA;
     public Transform pointB;
     public float moveSpeed = 3.0f;
+    public float distanceToPointA;
+    public float distanceToPointB;
     private Transform currentWaypoint;
 
     [Header("Rotation Settings")]
@@ -22,10 +24,12 @@ public class HunterController : MonoBehaviour
     [Range(0, 360)] 
     public float viewAngle = 60.0f;
     public string targetTag = "animation"; // The tag you specified
+    public LayerMask wallLayer; // Set to "Wall" layer in Inspector
 
     [Header("References")]
     public Animator animator;
-
+    public GameObject AnimalCage;
+    public ParticleSystem particleSystem;
     // Internal State
     private bool isAttacking = false;
     private float currentSweepAngle = 0f;
@@ -150,14 +154,21 @@ public class HunterController : MonoBehaviour
 
                 // Draw a debug line in scene view showing player in range
                 Debug.DrawLine(eyes.position, col.transform.position, Color.yellow);
+                  
+                // Wall-blocking check: raycast from eyes to target — skip if wall is in between
+                Vector3 toTarget = col.transform.position - eyes.position;
+                bool wallBlocked = Physics.Raycast(eyes.position, toTarget.normalized, toTarget.magnitude, wallLayer);
 
-                if (angle < viewAngle / 2f)
+                if (angle < viewAngle / 2f && !wallBlocked)
                 {
+                    // Play the particle system
+                    Instantiate(particleSystem,col.transform.position,Quaternion.identity);
                     // Draw detection line in red for 2 seconds
                     Debug.DrawLine(eyes.position, col.transform.position, Color.red, 2.0f);
                     
                     // Console log as requested
                     Debug.Log($"[Player Capture] Detected player '{col.name}' at angle {angle:F1}° (vision limit: {viewAngle/2f}°) inside view radius!");
+                    Instantiate(AnimalCage,col.transform.position,Quaternion.identity);
                     
                     EngageTarget(col.transform);
                     break; 

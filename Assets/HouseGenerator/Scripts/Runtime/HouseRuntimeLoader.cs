@@ -7,17 +7,41 @@ using UnityEditor;
 namespace HouseGenerator
 {
     [System.Serializable]
+    public class SerializedMaterial
+    {
+        public string name;
+        public string assetPath;
+        public string shaderName;
+        public Color color = Color.white;
+        public string mainTexturePath;
+    }
+
+    [System.Serializable]
+    public class CustomComponentData
+    {
+        public string componentType; // e.g., "HunterController", "BoxCollider"
+        public List<string> propertyKeys = new List<string>();
+        public List<string> propertyValues = new List<string>();
+    }
+
+    [System.Serializable]
     public class SerializedNode
     {
         public string name;
         public string prefabPath;
         public string meshPath;
         public string meshName;
+        public string tag;
+        public int layer;
         public List<string> materialPaths;
+        public List<SerializedMaterial> materials = new List<SerializedMaterial>();
         public Vector3 localPosition;
-        public Vector3 localRotation; // Store as Euler angles
+        public Vector3 localRotation;
         public Vector3 localScale;
         public List<SerializedNode> children = new List<SerializedNode>();
+
+        // Yeh list har node ke components aur unki modified values save karegi
+        public List<CustomComponentData> customizedComponents = new List<CustomComponentData>();
     }
 
     [System.Serializable]
@@ -162,7 +186,22 @@ namespace HouseGenerator
             }
 
             go.name = node.name;
+
+            // Restore Tag — use try/catch because Unity throws if the tag doesn't exist in the project
+            if (!string.IsNullOrEmpty(node.tag) && node.tag != "Untagged")
+            {
+                try { go.tag = node.tag; }
+                catch { /* Tag not defined in project — skip silently */ }
+            }
+
+            // Restore Layer — only apply when non-zero (0 = Default which is the new-object default anyway)
+            if (node.layer > 0 && node.layer <= 31)
+            {
+                go.layer = node.layer;
+            }
+
             go.transform.SetParent(parent);
+
 
             if (isRoot)
             {
@@ -180,10 +219,73 @@ namespace HouseGenerator
             // Apply materials if custom mesh/primitive
             if (isNew)
             {
-                if (node.materialPaths != null && node.materialPaths.Count > 0)
+                Renderer renderer = go.GetComponent<Renderer>();
+                if (renderer != null)
                 {
-                    Renderer renderer = go.GetComponent<Renderer>();
-                    if (renderer != null)
+                    if (node.materials != null && node.materials.Count > 0)
+                    {
+                        Material[] mats = new Material[node.materials.Count];
+                        for (int i = 0; i < node.materials.Count; i++)
+                        {
+                            var sMat = node.materials[i];
+                            if (sMat == null) continue;
+
+                            // 1. Try mapping dictionary first
+                            if (!string.IsNullOrEmpty(sMat.assetPath) && materialDict.TryGetValue(sMat.assetPath, out Material mappedMat))
+                            {
+                                mats[i] = mappedMat;
+                            }
+#if UNITY_EDITOR
+                            // 2. If in editor, try loading from asset path directly
+                            if (mats[i] == null && !string.IsNullOrEmpty(sMat.assetPath))
+                            {
+                                mats[i] = AssetDatabase.LoadAssetAtPath<Material>(sMat.assetPath);
+                            }
+#endif
+                            // 3. Fallback: recreate the material dynamically (preserves color & shader)
+                            if (mats[i] == null)
+                            {
+                                Shader shader = Shader.Find(sMat.shaderName);
+                                if (shader == null)
+                                {
+                                    shader = Shader.Find("Universal Render Pipeline/Lit");
+                                }
+                                if (shader == null)
+                                {
+                                    shader = Shader.Find("Standard");
+                                }
+                                
+                                if (shader != null)
+                                {
+                                    Material newMat = new Material(shader);
+                                    newMat.name = sMat.name;
+                                    
+                                    if (newMat.HasProperty("_BaseColor"))
+                                        newMat.SetColor("_BaseColor", sMat.color);
+                                    else if (newMat.HasProperty("_Color"))
+                                        newMat.SetColor("_Color", sMat.color);
+
+#if UNITY_EDITOR
+                                    if (!string.IsNullOrEmpty(sMat.mainTexturePath))
+                                    {
+                                        Texture2D tex = AssetDatabase.LoadAssetAtPath<Texture2D>(sMat.mainTexturePath);
+                                        if (tex != null)
+                                        {
+                                            newMat.mainTexture = tex;
+                                            if (newMat.HasProperty("_BaseMap"))
+                                                newMat.SetTexture("_BaseMap", tex);
+                                            else if (newMat.HasProperty("_MainTex"))
+                                                newMat.SetTexture("_MainTex", tex);
+                                        }
+                                    }
+#endif
+                                    mats[i] = newMat;
+                                }
+                            }
+                        }
+                        renderer.sharedMaterials = mats;
+                    }
+                    else if (node.materialPaths != null && node.materialPaths.Count > 0)
                     {
                         Material[] mats = new Material[node.materialPaths.Count];
                         for (int i = 0; i < node.materialPaths.Count; i++)
@@ -231,6 +333,40 @@ namespace HouseGenerator
             {
                 if (Application.isPlaying) Destroy(leftover.gameObject);
                 else DestroyImmediate(leftover.gameObject);
+            }
+
+            // Restore custom component values (HunterController, BoxCollider, etc.)
+            if (node.customizedComponents != null && node.customizedComponents.Count > 0)
+            {
+                foreach (var compData in node.customizedComponents)
+                {
+                    if (compData.componentType == "HunterController")
+                    {
+                        HunterController hunter = go.GetComponent<HunterController>();
+                        if (hunter == null) hunter = go.AddComponent<HunterController>();
+                        for (int i = 0; i < compData.propertyKeys.Count; i++)
+                        {
+                            string key = compData.propertyKeys[i];
+                            string val = compData.propertyValues[i];
+                            if (key == "distanceToPointA") hunter.distanceToPointA = float.Parse(val);
+                            if (key == "distanceToPointB") hunter.distanceToPointB = float.Parse(val);
+                            if (key == "moveSpeed") hunter.moveSpeed = float.Parse(val);
+                            if (key == "canMove") hunter.canMove = bool.Parse(val);
+                        }
+                    }
+                    if (compData.componentType == "BoxCollider")
+                    {
+                        BoxCollider boxCollider = go.GetComponent<BoxCollider>();
+                        if (boxCollider == null) boxCollider = go.AddComponent<BoxCollider>();
+                        for (int i = 0; i < compData.propertyKeys.Count; i++)
+                        {
+                            string key = compData.propertyKeys[i];
+                            string val = compData.propertyValues[i];
+                            if (key == "center") boxCollider.center = JsonUtility.FromJson<Vector3>(val);
+                            if (key == "size") boxCollider.size = JsonUtility.FromJson<Vector3>(val);
+                        }
+                    }
+                }
             }
 
             return go;
@@ -299,6 +435,13 @@ namespace HouseGenerator
         private void FindPaths(SerializedNode node, HashSet<string> prefabs, HashSet<string> materials)
         {
             if (!string.IsNullOrEmpty(node.prefabPath)) prefabs.Add(node.prefabPath);
+            if (node.materials != null)
+            {
+                foreach (var mat in node.materials)
+                {
+                    if (mat != null && !string.IsNullOrEmpty(mat.assetPath)) materials.Add(mat.assetPath);
+                }
+            }
             if (node.materialPaths != null)
             {
                 foreach (var matPath in node.materialPaths)

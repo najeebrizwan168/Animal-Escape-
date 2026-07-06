@@ -81,6 +81,8 @@ namespace HouseGenerator
         {
             SerializedNode node = new SerializedNode();
             node.name = go.name;
+            node.tag = go.tag;
+            node.layer = go.layer;
             node.localPosition = go.transform.localPosition;
             node.localRotation = go.transform.localRotation.eulerAngles;
             node.localScale = go.transform.localScale;
@@ -108,18 +110,92 @@ namespace HouseGenerator
             if (renderer != null)
             {
                 node.materialPaths = new List<string>();
+                node.materials = new List<SerializedMaterial>();
                 foreach (Material mat in renderer.sharedMaterials)
                 {
                     if (mat != null)
                     {
                         node.materialPaths.Add(AssetDatabase.GetAssetPath(mat));
+
+                        SerializedMaterial sMat = new SerializedMaterial();
+                        sMat.name = mat.name;
+                        sMat.assetPath = AssetDatabase.GetAssetPath(mat);
+                        sMat.shaderName = mat.shader != null ? mat.shader.name : "Universal Render Pipeline/Lit";
+
+                        // Save base color
+                        if (mat.HasProperty("_BaseColor"))
+                            sMat.color = mat.GetColor("_BaseColor");
+                        else if (mat.HasProperty("_Color"))
+                            sMat.color = mat.GetColor("_Color");
+                        else
+                            sMat.color = Color.white;
+
+                        // Save main texture path
+                        if (mat.mainTexture != null)
+                        {
+                            sMat.mainTexturePath = AssetDatabase.GetAssetPath(mat.mainTexture);
+                        }
+                        else if (mat.HasProperty("_BaseMap") && mat.GetTexture("_BaseMap") != null)
+                        {
+                            sMat.mainTexturePath = AssetDatabase.GetAssetPath(mat.GetTexture("_BaseMap"));
+                        }
+                        else if (mat.HasProperty("_MainTex") && mat.GetTexture("_MainTex") != null)
+                        {
+                            sMat.mainTexturePath = AssetDatabase.GetAssetPath(mat.GetTexture("_MainTex"));
+                        }
+
+                        node.materials.Add(sMat);
                     }
                     else
                     {
                         node.materialPaths.Add("");
+                        node.materials.Add(null);
                     }
                 }
             }
+
+            // =========================================================================
+            // 🔥 NEW: CUSTOM COMPONENT & VALUE SERIALIZATION
+            // =========================================================================
+            node.customizedComponents = new List<CustomComponentData>();
+
+            // 1. Save HunterController specific properties if it exists
+            HunterController hunter = go.GetComponent<HunterController>();
+            if (hunter != null)
+            {
+                CustomComponentData hunterData = new CustomComponentData();
+                hunterData.componentType = "HunterController";
+
+                hunterData.propertyKeys.Add("distanceToPointA");
+                hunterData.propertyValues.Add(hunter.distanceToPointA.ToString());
+
+                hunterData.propertyKeys.Add("distanceToPointB");
+                hunterData.propertyValues.Add(hunter.distanceToPointB.ToString());
+
+                hunterData.propertyKeys.Add("moveSpeed");
+                hunterData.propertyValues.Add(hunter.moveSpeed.ToString());
+
+                hunterData.propertyKeys.Add("canMove");
+                hunterData.propertyValues.Add(hunter.canMove.ToString());
+
+                node.customizedComponents.Add(hunterData);
+            }
+
+            // 2. Save BoxCollider if it was added dynamically or modified
+            BoxCollider boxCollider = go.GetComponent<BoxCollider>();
+            if (boxCollider != null)
+            {
+                CustomComponentData boxData = new CustomComponentData();
+                boxData.componentType = "BoxCollider";
+                boxData.propertyKeys.Add("center");
+                boxData.propertyValues.Add(JsonUtility.ToJson(boxCollider.center));
+
+                boxData.propertyKeys.Add("size");
+                boxData.propertyValues.Add(JsonUtility.ToJson(boxCollider.size));
+
+                node.customizedComponents.Add(boxData);
+            }
+            // =========================================================================
 
             // Recursively serialize children
             foreach (Transform child in go.transform)
@@ -175,6 +251,19 @@ namespace HouseGenerator
             go.transform.localRotation = Quaternion.Euler(node.localRotation);
             go.transform.localScale = node.localScale;
 
+            // Restore Tag
+            if (!string.IsNullOrEmpty(node.tag) && node.tag != "Untagged")
+            {
+                try { go.tag = node.tag; }
+                catch { /* Tag not in project — skip */ }
+            }
+
+            // Restore Layer (skip 0 = Default, that's already the default)
+            if (node.layer > 0 && node.layer <= 31)
+            {
+                go.layer = node.layer;
+            }
+
             // Apply Mesh and Materials to newly created gameobjects (like primitives/custom objects)
             if (isNew)
             {
@@ -197,10 +286,68 @@ namespace HouseGenerator
                     if (meshRenderer == null) go.AddComponent<MeshRenderer>();
                 }
 
-                if (node.materialPaths != null && node.materialPaths.Count > 0)
+                Renderer renderer = go.GetComponent<Renderer>();
+                if (renderer != null)
                 {
-                    Renderer renderer = go.GetComponent<Renderer>();
-                    if (renderer != null)
+                    if (node.materials != null && node.materials.Count > 0)
+                    {
+                        Material[] mats = new Material[node.materials.Count];
+                        for (int i = 0; i < node.materials.Count; i++)
+                        {
+                            var sMat = node.materials[i];
+                            if (sMat == null) continue;
+
+                            // 1. Try loading directly from AssetDatabase if it has a valid asset path
+                            if (!string.IsNullOrEmpty(sMat.assetPath))
+                            {
+                                mats[i] = AssetDatabase.LoadAssetAtPath<Material>(sMat.assetPath);
+                            }
+
+                            // 2. If no asset found (e.g. procedurally created/instanced material), recreate it
+                            if (mats[i] == null)
+                            {
+                                Shader shader = Shader.Find(sMat.shaderName);
+                                if (shader == null)
+                                {
+                                    shader = Shader.Find("Universal Render Pipeline/Lit");
+                                }
+                                if (shader == null)
+                                {
+                                    shader = Shader.Find("Standard");
+                                }
+
+                                if (shader != null)
+                                {
+                                    Material newMat = new Material(shader);
+                                    newMat.name = sMat.name;
+
+                                    if (newMat.HasProperty("_BaseColor"))
+                                        newMat.SetColor("_BaseColor", sMat.color);
+                                    else if (newMat.HasProperty("_Color"))
+                                        newMat.SetColor("_Color", sMat.color);
+
+                                    if (!string.IsNullOrEmpty(sMat.mainTexturePath))
+                                    {
+                                        Texture2D tex = AssetDatabase.LoadAssetAtPath<Texture2D>(sMat.mainTexturePath);
+                                        if (tex != null)
+                                        {
+                                            newMat.mainTexture = tex;
+                                            
+                                            // Set texture property for URP/Standard shader explicitly if needed
+                                            if (newMat.HasProperty("_BaseMap"))
+                                                newMat.SetTexture("_BaseMap", tex);
+                                            else if (newMat.HasProperty("_MainTex"))
+                                                newMat.SetTexture("_MainTex", tex);
+                                        }
+                                    }
+
+                                    mats[i] = newMat;
+                                }
+                            }
+                        }
+                        renderer.sharedMaterials = mats;
+                    }
+                    else if (node.materialPaths != null && node.materialPaths.Count > 0)
                     {
                         Material[] mats = new Material[node.materialPaths.Count];
                         for (int i = 0; i < node.materialPaths.Count; i++)
@@ -220,6 +367,50 @@ namespace HouseGenerator
             {
                 DeserializeGameObject(childNode, go.transform);
             }
+
+            // =========================================================================
+            // 🔥 NEW: RESTORE CUSTOM COMPONENT VALUES AT RUNTIME / IMPORT
+            // =========================================================================
+            if (node.customizedComponents != null && node.customizedComponents.Count > 0)
+            {
+                foreach (var compData in node.customizedComponents)
+                {
+                    // 1. Restore HunterController properties
+                    if (compData.componentType == "HunterController")
+                    {
+                        HunterController hunter = go.GetComponent<HunterController>();
+                        if (hunter == null) hunter = go.AddComponent<HunterController>(); 
+
+                        for (int i = 0; i < compData.propertyKeys.Count; i++)
+                        {
+                            string key = compData.propertyKeys[i];
+                            string val = compData.propertyValues[i];
+
+                            if (key == "distanceToPointA") hunter.distanceToPointA = float.Parse(val);
+                            if (key == "distanceToPointB") hunter.distanceToPointB = float.Parse(val);
+                            if (key == "moveSpeed") hunter.moveSpeed = float.Parse(val);
+                            if (key == "canMove") hunter.canMove = bool.Parse(val);
+                        }
+                    }
+
+                    // 2. Restore BoxCollider properties
+                    if (compData.componentType == "BoxCollider")
+                    {
+                        BoxCollider boxCollider = go.GetComponent<BoxCollider>();
+                        if (boxCollider == null) boxCollider = go.AddComponent<BoxCollider>();
+
+                        for (int i = 0; i < compData.propertyKeys.Count; i++)
+                        {
+                            string key = compData.propertyKeys[i];
+                            string val = compData.propertyValues[i];
+
+                            if (key == "center") boxCollider.center = JsonUtility.FromJson<Vector3>(val);
+                            if (key == "size") boxCollider.size = JsonUtility.FromJson<Vector3>(val);
+                        }
+                    }
+                }
+            }
+            // =========================================================================
 
             return go;
         }
