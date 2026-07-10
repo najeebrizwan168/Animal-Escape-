@@ -1,0 +1,3735 @@
+{
+    "rootName": "HomeLayout_6",
+    "rootNode": {
+        "name": "HomeLayout_6",
+        "prefabPath": "",
+        "meshPath": "",
+        "meshName": "",
+        "tag": "Untagged",
+        "layer": 0,
+        "materialPaths": [],
+        "materials": [],
+        "localPosition": {
+            "x": -16.43000030517578,
+            "y": 0.0,
+            "z": -30.0
+        },
+        "localRotation": {
+            "x": 0.0,
+            "y": 0.6956243515014648,
+            "z": 0.0
+        },
+        "localScale": {
+            "x": 0.6000000238418579,
+            "y": 0.2800000011920929,
+            "z": 0.699999988079071
+        },
+        "children": [
+            {
+                "name": "Floor_Main",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    "Assets/HomeDesign/FloorMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "FloorMat_6",
+                        "assetPath": "Assets/HomeDesign/FloorMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7200000286102295,
+                            "g": 0.6499999761581421,
+                            "b": 0.550000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.0,
+                    "y": -0.05000000074505806,
+                    "z": 7.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 10.0,
+                    "y": 0.10000000149011612,
+                    "z": 15.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Floor_Balcony",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    "Assets/HomeDesign/BalconyMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "BalconyMat_6",
+                        "assetPath": "Assets/HomeDesign/BalconyMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.5199999809265137,
+                            "g": 0.550000011920929,
+                            "b": 0.5799999833106995,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.0,
+                    "y": -0.05000000074505806,
+                    "z": 16.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 4.0,
+                    "y": 0.10000000149011612,
+                    "z": 2.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_South",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.0,
+                    "y": 1.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 10.0,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_North_Left",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 2.200000047683716,
+                    "y": 1.0,
+                    "z": 15.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 4.400000095367432,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_North_Right",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.800000190734863,
+                    "y": 1.0,
+                    "z": 15.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 4.400000095367432,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_West",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 1.0,
+                    "z": 7.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.20000000298023225,
+                    "y": 2.0,
+                    "z": 15.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_East",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 10.0,
+                    "y": 1.0,
+                    "z": 7.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.20000000298023225,
+                    "y": 2.0,
+                    "z": 15.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Balcony_S_W",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 3.0,
+                    "y": 0.5,
+                    "z": 16.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.20000000298023225,
+                    "y": 1.0,
+                    "z": 2.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Balcony_S_E",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.0,
+                    "y": 0.5,
+                    "z": 16.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.20000000298023225,
+                    "y": 1.0,
+                    "z": 2.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Balcony_S_N",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/ExtWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "ExtWallMat_6",
+                        "assetPath": "Assets/HomeDesign/ExtWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.7599999904632568,
+                            "g": 0.800000011920929,
+                            "b": 0.7799999713897705,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.0,
+                    "y": 0.5,
+                    "z": 17.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 4.199999809265137,
+                    "y": 1.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Z5_Left",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/IntWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "IntWallMat_6",
+                        "assetPath": "Assets/HomeDesign/IntWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8500000238418579,
+                            "g": 0.8799999952316284,
+                            "b": 0.8600000143051148,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 0.8740000128746033,
+                    "y": 1.0,
+                    "z": 4.999199867248535
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.748189926147461,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Z5_Right",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/IntWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "IntWallMat_6",
+                        "assetPath": "Assets/HomeDesign/IntWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8500000238418579,
+                            "g": 0.8799999952316284,
+                            "b": 0.8600000143051148,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 6.775300025939941,
+                    "y": 1.0,
+                    "z": 5.002299785614014
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 6.449429988861084,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Z10_Left",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/IntWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "IntWallMat_6",
+                        "assetPath": "Assets/HomeDesign/IntWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8500000238418579,
+                            "g": 0.8799999952316284,
+                            "b": 0.8600000143051148,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 3.2883999347686769,
+                    "y": 1.0,
+                    "z": 9.998299598693848
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 6.577079772949219,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Z10_Right",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/IntWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "IntWallMat_6",
+                        "assetPath": "Assets/HomeDesign/IntWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8500000238418579,
+                            "g": 0.8799999952316284,
+                            "b": 0.8600000143051148,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 9.163100242614746,
+                    "y": 1.0,
+                    "z": 10.001199722290039
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.674090027809143,
+                    "y": 2.0,
+                    "z": 0.20000000298023225
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_X55_South",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/IntWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "IntWallMat_6",
+                        "assetPath": "Assets/HomeDesign/IntWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8500000238418579,
+                            "g": 0.8799999952316284,
+                            "b": 0.8600000143051148,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.5,
+                    "y": 1.0,
+                    "z": 5.949999809265137
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.20000000298023225,
+                    "y": 2.0,
+                    "z": 1.899999976158142
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_X55_North",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    "Assets/HomeDesign/IntWallMat_6.mat"
+                ],
+                "materials": [
+                    {
+                        "name": "IntWallMat_6",
+                        "assetPath": "Assets/HomeDesign/IntWallMat_6.mat",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8500000238418579,
+                            "g": 0.8799999952316284,
+                            "b": 0.8600000143051148,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.5,
+                    "y": 1.0,
+                    "z": 9.050000190734864
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.20000000298023225,
+                    "y": 2.0,
+                    "z": 1.899999976158142
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SaloonDoor_D6_Entry",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 9,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 2.5,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.4287536144256592,
+                    "y": 2.5,
+                    "z": 1.6664186716079713
+                },
+                "children": [
+                    {
+                        "name": "Right]",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Door Colours",
+                                        "assetPath": "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.9308176040649414,
+                                            "g": 0.49320846796035769,
+                                            "b": 0.09073992818593979,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.03349119797348976,
+                                    "y": -0.020337998867034913,
+                                    "z": -0.016138844192028047
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.0000019073486328125,\"y\":0.0,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.0000001192092896,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Left",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Door Colours",
+                                        "assetPath": "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.9308176040649414,
+                                            "g": 0.49320846796035769,
+                                            "b": 0.09073992818593979,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.024802088737487794,
+                                    "y": -0.020337998867034913,
+                                    "z": 0.8553778529167175
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.000003814697265625,\"y\":5.960464477539063e-8,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.000000238418579,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "SaloonDoor_D6_Bedroom",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 9,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 7.5,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.4287536144256592,
+                    "y": 2.5,
+                    "z": 1.6664186716079713
+                },
+                "children": [
+                    {
+                        "name": "Right]",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Door Colours",
+                                        "assetPath": "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.9308176040649414,
+                                            "g": 0.49320846796035769,
+                                            "b": 0.09073992818593979,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.03349119797348976,
+                                    "y": -0.020337998867034913,
+                                    "z": -0.016138844192028047
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.0000019073486328125,\"y\":0.0,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.0000001192092896,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Left",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Door Colours",
+                                        "assetPath": "Assets/SaloonDoor_D1_Gap1/Materials/Door Colours.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.9308176040649414,
+                                            "g": 0.49320846796035769,
+                                            "b": 0.09073992818593979,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.024802088737487794,
+                                    "y": -0.020337998867034913,
+                                    "z": 0.8553778529167175
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.000003814697265625,\"y\":5.960464477539063e-8,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.000000238418579,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "BlockedDoor_D6_Bathroom",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 5.5,
+                    "y": 0.0,
+                    "z": 7.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "crate_0_0",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.25,
+                            "z": -0.44999998807907107
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_0_1",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.25,
+                            "z": -0.1499999761581421
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_0_2",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.25,
+                            "z": 0.15000003576278687
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_0_3",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.25,
+                            "z": 0.4500000476837158
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_1_0",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.75,
+                            "z": -0.44999998807907107
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_1_1",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.75,
+                            "z": -0.1499999761581421
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_1_2",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.75,
+                            "z": 0.15000003576278687
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_1_3",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.75,
+                            "z": 0.4500000476837158
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_2_0",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.25,
+                            "z": -0.44999998807907107
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_2_1",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.25,
+                            "z": -0.1499999761581421
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_2_2",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.25,
+                            "z": 0.15000003576278687
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_2_3",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.25,
+                            "z": 0.4500000476837158
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_3_0",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.75,
+                            "z": -0.44999998807907107
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_3_1",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.75,
+                            "z": -0.1499999761581421
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_3_2",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatB_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatB_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatB_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.699999988079071,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.20000000298023225,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.75,
+                            "z": 0.15000003576278687
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate_3_3",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/HomeDesign/CrateMatA_6.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "CrateMatA_6",
+                                "assetPath": "Assets/HomeDesign/CrateMatA_6.mat",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 1.75,
+                            "z": 0.4500000476837158
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 270.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.25,
+                            "y": 0.5,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "--- ROOM LABELS ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Living Room (Z=0-5)",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 5.0,
+                            "y": 0.5,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Corridor (Z=5-10)",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 2.5,
+                            "y": 0.5,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Bathroom (Z=5-10)",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 5.5,
+                            "y": 0.5,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Kitchen (Z=5-10)",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 8.5,
+                            "y": 0.5,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Master Bedroom (Z=10-15)",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 5.0,
+                            "y": 0.5,
+                            "z": 12.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "penguin",
+                "prefabPath": "Assets/Useable from castlepack/penguin.prefab",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Player",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 6.6090779304504398,
+                    "y": 0.28571435809135439,
+                    "z": 1.8284807205200196
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 89.30436706542969,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.11428806930780411,
+                    "y": 0.28571435809135439,
+                    "z": 0.1333300620317459
+                },
+                "children": [
+                    {
+                        "name": "ARM_FOOT",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/JKT_Art/Animals/Penguin/Materials/penguin.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "penguin",
+                                "assetPath": "Assets/JKT_Art/Animals/Penguin/Materials/penguin.mat",
+                                "shaderName": "Unlit/Texture",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": "Assets/JKT_Art/Animals/Penguin/Materials/penguin.tif"
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -1.3575567336943095e-8,
+                            "y": -0.07759237289428711,
+                            "z": -3.1913630071933598e-10
+                        },
+                        "localRotation": {
+                            "x": 270.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Bip001",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -2.2834848678598975e-8,
+                            "y": 2.1946825981140138,
+                            "z": -0.5224004983901978
+                        },
+                        "localRotation": {
+                            "x": 270.0,
+                            "y": 89.99992370605469,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.9999999403953552,
+                            "y": 0.9999999403953552,
+                            "z": 1.0
+                        },
+                        "children": [
+                            {
+                                "name": "Bip001 Footsteps",
+                                "prefabPath": "",
+                                "meshPath": "",
+                                "meshName": "",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [],
+                                "materials": [],
+                                "localPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": -2.1609086990356447
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 270.00006103515627
+                                },
+                                "localScale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            },
+                            {
+                                "name": "Bip001 Pelvis",
+                                "prefabPath": "",
+                                "meshPath": "",
+                                "meshName": "",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [],
+                                "materials": [],
+                                "localPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 270.0,
+                                    "y": 90.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 1.0,
+                                    "y": 0.9999999403953552,
+                                    "z": 0.9999999403953552
+                                },
+                                "children": [
+                                    {
+                                        "name": "Bip001 Spine",
+                                        "prefabPath": "",
+                                        "meshPath": "",
+                                        "meshName": "",
+                                        "tag": "Untagged",
+                                        "layer": 0,
+                                        "materialPaths": [],
+                                        "materials": [],
+                                        "localPosition": {
+                                            "x": -1.188680648803711,
+                                            "y": -0.0011401176452636719,
+                                            "z": 0.0000016500434867339209
+                                        },
+                                        "localRotation": {
+                                            "x": -0.00023837330809328705,
+                                            "y": 0.00007958432252053171,
+                                            "z": 359.9543762207031
+                                        },
+                                        "localScale": {
+                                            "x": 1.0,
+                                            "y": 0.9999999403953552,
+                                            "z": 0.9999999403953552
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "Bip001 L Thigh",
+                                                "prefabPath": "",
+                                                "meshPath": "",
+                                                "meshName": "",
+                                                "tag": "Untagged",
+                                                "layer": 0,
+                                                "materialPaths": [],
+                                                "materials": [],
+                                                "localPosition": {
+                                                    "x": 1.1886794567108155,
+                                                    "y": 0.0020831823348999025,
+                                                    "z": 1.3224053382873536
+                                                },
+                                                "localRotation": {
+                                                    "x": -0.00015891158545855433,
+                                                    "y": 180.0,
+                                                    "z": 354.22479248046877
+                                                },
+                                                "localScale": {
+                                                    "x": 1.0,
+                                                    "y": 1.0,
+                                                    "z": 1.0
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "Bip001 L Calf",
+                                                        "prefabPath": "",
+                                                        "meshPath": "",
+                                                        "meshName": "",
+                                                        "tag": "Untagged",
+                                                        "layer": 0,
+                                                        "materialPaths": [],
+                                                        "materials": [],
+                                                        "localPosition": {
+                                                            "x": -0.9055498838424683,
+                                                            "y": 0.0,
+                                                            "z": 0.0
+                                                        },
+                                                        "localRotation": {
+                                                            "x": 1.4032160849941633e-12,
+                                                            "y": 1.530620682282935e-12,
+                                                            "z": 11.45915699005127
+                                                        },
+                                                        "localScale": {
+                                                            "x": 0.9999999403953552,
+                                                            "y": 1.0000001192092896,
+                                                            "z": 1.0
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "Bip001 L Foot",
+                                                                "prefabPath": "",
+                                                                "meshPath": "",
+                                                                "meshName": "",
+                                                                "tag": "Untagged",
+                                                                "layer": 0,
+                                                                "materialPaths": [],
+                                                                "materials": [],
+                                                                "localPosition": {
+                                                                    "x": -0.8735883235931397,
+                                                                    "y": -5.960464477539063e-8,
+                                                                    "z": -1.1920928955078126e-7
+                                                                },
+                                                                "localRotation": {
+                                                                    "x": 341.69873046875,
+                                                                    "y": 1.9017069339752198,
+                                                                    "z": 353.96405029296877
+                                                                },
+                                                                "localScale": {
+                                                                    "x": 1.0,
+                                                                    "y": 0.9999998807907105,
+                                                                    "z": 1.0000001192092896
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "Bip001 L Toe0",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": -0.3906589448451996,
+                                                                            "y": 0.8528931736946106,
+                                                                            "z": 0.0
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": 3.0533325976085657e-13,
+                                                                            "y": 0.0000025044791982509197,
+                                                                            "z": 270.0
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": 1.0000001192092896,
+                                                                            "y": 1.0,
+                                                                            "z": 1.0000001192092896
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bip001 L Toe0Nub",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -0.8741012811660767,
+                                                                                    "y": 0.0,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": 0.0,
+                                                                                    "y": 6.529387355227664e-14,
+                                                                                    "z": 180.0
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": -1.0000001192092896,
+                                                                                    "y": -1.0,
+                                                                                    "z": -1.0000001192092896
+                                                                                },
+                                                                                "children": [],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    }
+                                                                ],
+                                                                "customizedComponents": []
+                                                            }
+                                                        ],
+                                                        "customizedComponents": []
+                                                    }
+                                                ],
+                                                "customizedComponents": []
+                                            },
+                                            {
+                                                "name": "Bip001 Neck",
+                                                "prefabPath": "",
+                                                "meshPath": "",
+                                                "meshName": "",
+                                                "tag": "Untagged",
+                                                "layer": 0,
+                                                "materialPaths": [],
+                                                "materials": [],
+                                                "localPosition": {
+                                                    "x": -1.4319531917572022,
+                                                    "y": -0.0002028346061706543,
+                                                    "z": -5.626361598842777e-10
+                                                },
+                                                "localRotation": {
+                                                    "x": -3.4512310544132507e-12,
+                                                    "y": 0.0,
+                                                    "z": 0.0
+                                                },
+                                                "localScale": {
+                                                    "x": 1.0,
+                                                    "y": 1.0,
+                                                    "z": 1.0
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "Bip001 Head",
+                                                        "prefabPath": "",
+                                                        "meshPath": "",
+                                                        "meshName": "",
+                                                        "tag": "Untagged",
+                                                        "layer": 0,
+                                                        "materialPaths": [],
+                                                        "materials": [],
+                                                        "localPosition": {
+                                                            "x": -0.2547779083251953,
+                                                            "y": 5.960464477539063e-8,
+                                                            "z": 0.0
+                                                        },
+                                                        "localRotation": {
+                                                            "x": 9.185169602687893e-8,
+                                                            "y": -0.000005402564056566916,
+                                                            "z": 1.9483070373535157
+                                                        },
+                                                        "localScale": {
+                                                            "x": 1.0,
+                                                            "y": 1.0,
+                                                            "z": 1.0
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "Bip001 HeadNub",
+                                                                "prefabPath": "",
+                                                                "meshPath": "",
+                                                                "meshName": "",
+                                                                "tag": "Untagged",
+                                                                "layer": 0,
+                                                                "materialPaths": [],
+                                                                "materials": [],
+                                                                "localPosition": {
+                                                                    "x": -3.0174498558044435,
+                                                                    "y": -2.9802322387695315e-8,
+                                                                    "z": 2.842170943040401e-14
+                                                                },
+                                                                "localRotation": {
+                                                                    "x": 1.539388516831608e-12,
+                                                                    "y": 4.071110039794573e-13,
+                                                                    "z": 2.1344341405438173e-7
+                                                                },
+                                                                "localScale": {
+                                                                    "x": 1.0,
+                                                                    "y": 1.0,
+                                                                    "z": 0.9999999403953552
+                                                                },
+                                                                "children": [],
+                                                                "customizedComponents": []
+                                                            },
+                                                            {
+                                                                "name": "Dummy001",
+                                                                "prefabPath": "",
+                                                                "meshPath": "",
+                                                                "meshName": "",
+                                                                "tag": "Untagged",
+                                                                "layer": 0,
+                                                                "materialPaths": [],
+                                                                "materials": [],
+                                                                "localPosition": {
+                                                                    "x": -1.1715598106384278,
+                                                                    "y": 0.5616081953048706,
+                                                                    "z": 0.000001430511474609375
+                                                                },
+                                                                "localRotation": {
+                                                                    "x": 271.9023742675781,
+                                                                    "y": 90.0,
+                                                                    "z": 0.0
+                                                                },
+                                                                "localScale": {
+                                                                    "x": 1.0,
+                                                                    "y": 1.0,
+                                                                    "z": 1.0000001192092896
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "bone_EYE_l",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": 0.5614663362503052,
+                                                                            "y": 0.4289836883544922,
+                                                                            "z": 2.708190441131592
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": -0.0000045253345888340849,
+                                                                            "y": 180.0,
+                                                                            "z": 154.6151580810547
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": -0.9999999403953552,
+                                                                            "y": -0.9999999403953552,
+                                                                            "z": -1.0
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bone006",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -1.5533132553100587,
+                                                                                    "y": 4.76837158203125e-7,
+                                                                                    "z": 4.76837158203125e-7
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": -0.00002732075699896086,
+                                                                                    "y": 1.7556662504011888e-12,
+                                                                                    "z": -0.0000017075473124350538
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": 1.0,
+                                                                                    "y": 1.0,
+                                                                                    "z": 1.0
+                                                                                },
+                                                                                "children": [],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    },
+                                                                    {
+                                                                        "name": "bone_EYE_r",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": -0.5585335493087769,
+                                                                            "y": 0.428983211517334,
+                                                                            "z": 2.708190441131592
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": 8.142546903400216e-7,
+                                                                            "y": -3.863711981466622e-7,
+                                                                            "z": 334.61517333984377
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": 1.0,
+                                                                            "y": 1.0,
+                                                                            "z": 1.0
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bone005",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -1.5533137321472169,
+                                                                                    "y": 0.0,
+                                                                                    "z": 4.76837158203125e-7
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": 0.000007235312750708545,
+                                                                                    "y": 4.071109497693487e-13,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": 1.0,
+                                                                                    "y": 1.0,
+                                                                                    "z": 1.0
+                                                                                },
+                                                                                "children": [],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    },
+                                                                    {
+                                                                        "name": "bone_mouse",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": 0.0,
+                                                                            "y": -0.4695620536804199,
+                                                                            "z": 2.6921629905700685
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": 0.0,
+                                                                            "y": 270.0,
+                                                                            "z": 188.88059997558595
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": 1.0000001192092896,
+                                                                            "y": 1.0000001192092896,
+                                                                            "z": 1.0
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bone004",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -0.7967355251312256,
+                                                                                    "y": -9.5367431640625e-7,
+                                                                                    "z": 5.829485871799989e-8
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": 0.0,
+                                                                                    "y": -3.0533325976085657e-13,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": 1.0,
+                                                                                    "y": 1.0,
+                                                                                    "z": 1.0
+                                                                                },
+                                                                                "children": [],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    }
+                                                                ],
+                                                                "customizedComponents": []
+                                                            }
+                                                        ],
+                                                        "customizedComponents": []
+                                                    },
+                                                    {
+                                                        "name": "Bip001 L Clavicle",
+                                                        "prefabPath": "",
+                                                        "meshPath": "",
+                                                        "meshName": "",
+                                                        "tag": "Untagged",
+                                                        "layer": 0,
+                                                        "materialPaths": [],
+                                                        "materials": [],
+                                                        "localPosition": {
+                                                            "x": 0.1705036163330078,
+                                                            "y": 0.543242335319519,
+                                                            "z": 2.2154200077056886
+                                                        },
+                                                        "localRotation": {
+                                                            "x": 0.04562574252486229,
+                                                            "y": 270.0,
+                                                            "z": 180.0
+                                                        },
+                                                        "localScale": {
+                                                            "x": 1.0,
+                                                            "y": 1.0,
+                                                            "z": 1.0
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "Bip001 L UpperArm",
+                                                                "prefabPath": "",
+                                                                "meshPath": "",
+                                                                "meshName": "",
+                                                                "tag": "Untagged",
+                                                                "layer": 0,
+                                                                "materialPaths": [],
+                                                                "materials": [],
+                                                                "localPosition": {
+                                                                    "x": -0.44161415100097659,
+                                                                    "y": -9.313225746154785e-9,
+                                                                    "z": 0.0
+                                                                },
+                                                                "localRotation": {
+                                                                    "x": 353.7259216308594,
+                                                                    "y": 302.2548828125,
+                                                                    "z": 355.4986267089844
+                                                                },
+                                                                "localScale": {
+                                                                    "x": 1.0,
+                                                                    "y": 1.0,
+                                                                    "z": 1.0
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "Bip001 L Forearm",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": -1.7550876140594483,
+                                                                            "y": 0.0,
+                                                                            "z": -4.76837158203125e-7
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": 8.507649340572243e-8,
+                                                                            "y": -0.000005123047230881639,
+                                                                            "z": 359.7579040527344
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": 1.0,
+                                                                            "y": 0.9999998807907105,
+                                                                            "z": 1.0
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bip001 L Hand",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -0.43167543411254885,
+                                                                                    "y": 0.0,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": 270.03955078125,
+                                                                                    "y": 19.902620315551759,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": 1.0,
+                                                                                    "y": 1.0,
+                                                                                    "z": 1.0000001192092896
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "name": "Bip001 L Finger0",
+                                                                                        "prefabPath": "",
+                                                                                        "meshPath": "",
+                                                                                        "meshName": "",
+                                                                                        "tag": "Untagged",
+                                                                                        "layer": 0
+                                                                                    }
+                                                                                ],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    }
+                                                                ],
+                                                                "customizedComponents": []
+                                                            }
+                                                        ],
+                                                        "customizedComponents": []
+                                                    },
+                                                    {
+                                                        "name": "Bip001 R Clavicle",
+                                                        "prefabPath": "",
+                                                        "meshPath": "",
+                                                        "meshName": "",
+                                                        "tag": "Untagged",
+                                                        "layer": 0,
+                                                        "materialPaths": [],
+                                                        "materials": [],
+                                                        "localPosition": {
+                                                            "x": 0.1705036163330078,
+                                                            "y": 0.5432546734809876,
+                                                            "z": -2.2154171466827394
+                                                        },
+                                                        "localRotation": {
+                                                            "x": 359.9543762207031,
+                                                            "y": 90.0,
+                                                            "z": 180.0
+                                                        },
+                                                        "localScale": {
+                                                            "x": 1.0,
+                                                            "y": 1.0,
+                                                            "z": 1.0
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "Bip001 R UpperArm",
+                                                                "prefabPath": "",
+                                                                "meshPath": "",
+                                                                "meshName": "",
+                                                                "tag": "Untagged",
+                                                                "layer": 0,
+                                                                "materialPaths": [],
+                                                                "materials": [],
+                                                                "localPosition": {
+                                                                    "x": -0.44161415100097659,
+                                                                    "y": 9.313225746154785e-9,
+                                                                    "z": 0.0
+                                                                },
+                                                                "localRotation": {
+                                                                    "x": 6.274069786071777,
+                                                                    "y": 57.74510955810547,
+                                                                    "z": 355.4986267089844
+                                                                },
+                                                                "localScale": {
+                                                                    "x": 1.0,
+                                                                    "y": 1.0,
+                                                                    "z": 1.0
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "Bip001 R Forearm",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": -1.7550880908966065,
+                                                                            "y": -2.9802322387695315e-8,
+                                                                            "z": 4.76837158203125e-7
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": -8.507643656230357e-8,
+                                                                            "y": 0.000005123046776134288,
+                                                                            "z": 359.7579040527344
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": 1.0000001192092896,
+                                                                            "y": 1.0,
+                                                                            "z": 1.0000001192092896
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bip001 R Hand",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -0.43167567253112795,
+                                                                                    "y": 2.9802322387695315e-8,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": 89.96573638916016,
+                                                                                    "y": 340.0973815917969,
+                                                                                    "z": 0.0
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": 1.0,
+                                                                                    "y": 0.9999999403953552,
+                                                                                    "z": 1.0
+                                                                                },
+                                                                                "children": [
+                                                                                    {
+                                                                                        "name": "Bip001 R Finger0",
+                                                                                        "prefabPath": "",
+                                                                                        "meshPath": "",
+                                                                                        "meshName": "",
+                                                                                        "tag": "Untagged",
+                                                                                        "layer": 0
+                                                                                    }
+                                                                                ],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    }
+                                                                ],
+                                                                "customizedComponents": []
+                                                            }
+                                                        ],
+                                                        "customizedComponents": []
+                                                    }
+                                                ],
+                                                "customizedComponents": []
+                                            },
+                                            {
+                                                "name": "Bip001 R Thigh",
+                                                "prefabPath": "",
+                                                "meshPath": "",
+                                                "meshName": "",
+                                                "tag": "Untagged",
+                                                "layer": 0,
+                                                "materialPaths": [],
+                                                "materials": [],
+                                                "localPosition": {
+                                                    "x": 1.1886794567108155,
+                                                    "y": 0.0020904541015625,
+                                                    "z": -1.3224053382873536
+                                                },
+                                                "localRotation": {
+                                                    "x": -0.00015891158545855433,
+                                                    "y": 180.0,
+                                                    "z": 354.22479248046877
+                                                },
+                                                "localScale": {
+                                                    "x": 1.0,
+                                                    "y": 1.0,
+                                                    "z": 1.0
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "Bip001 R Calf",
+                                                        "prefabPath": "",
+                                                        "meshPath": "",
+                                                        "meshName": "",
+                                                        "tag": "Untagged",
+                                                        "layer": 0,
+                                                        "materialPaths": [],
+                                                        "materials": [],
+                                                        "localPosition": {
+                                                            "x": -0.9055498838424683,
+                                                            "y": -8.940696716308594e-8,
+                                                            "z": 0.0
+                                                        },
+                                                        "localRotation": {
+                                                            "x": 1.4032160849941633e-12,
+                                                            "y": 1.530620682282935e-12,
+                                                            "z": 11.45915699005127
+                                                        },
+                                                        "localScale": {
+                                                            "x": 0.9999999403953552,
+                                                            "y": 1.0000001192092896,
+                                                            "z": 1.0
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "Bip001 R Foot",
+                                                                "prefabPath": "",
+                                                                "meshPath": "",
+                                                                "meshName": "",
+                                                                "tag": "Untagged",
+                                                                "layer": 0,
+                                                                "materialPaths": [],
+                                                                "materials": [],
+                                                                "localPosition": {
+                                                                    "x": -0.8735883235931397,
+                                                                    "y": 0.0,
+                                                                    "z": -1.1920928955078126e-7
+                                                                },
+                                                                "localRotation": {
+                                                                    "x": 18.30130958557129,
+                                                                    "y": 358.0982971191406,
+                                                                    "z": 353.9640197753906
+                                                                },
+                                                                "localScale": {
+                                                                    "x": 1.0,
+                                                                    "y": 0.9999998807907105,
+                                                                    "z": 1.0000001192092896
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "Bip001 R Toe0",
+                                                                        "prefabPath": "",
+                                                                        "meshPath": "",
+                                                                        "meshName": "",
+                                                                        "tag": "Untagged",
+                                                                        "layer": 0,
+                                                                        "materialPaths": [],
+                                                                        "materials": [],
+                                                                        "localPosition": {
+                                                                            "x": -0.3906588852405548,
+                                                                            "y": 0.852893054485321,
+                                                                            "z": 0.0
+                                                                        },
+                                                                        "localRotation": {
+                                                                            "x": 0.0,
+                                                                            "y": -0.000002504480335119297,
+                                                                            "z": 270.0
+                                                                        },
+                                                                        "localScale": {
+                                                                            "x": 1.0,
+                                                                            "y": 0.9999999403953552,
+                                                                            "z": 1.0
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "Bip001 R Toe0Nub",
+                                                                                "prefabPath": "",
+                                                                                "meshPath": "",
+                                                                                "meshName": "",
+                                                                                "tag": "Untagged",
+                                                                                "layer": 0,
+                                                                                "materialPaths": [],
+                                                                                "materials": [],
+                                                                                "localPosition": {
+                                                                                    "x": -0.8741012215614319,
+                                                                                    "y": 0.0,
+                                                                                    "z": -1.1920928955078126e-7
+                                                                                },
+                                                                                "localRotation": {
+                                                                                    "x": 1.159852308925839e-28,
+                                                                                    "y": -6.529388032854022e-14,
+                                                                                    "z": 1.0177775099486433e-13
+                                                                                },
+                                                                                "localScale": {
+                                                                                    "x": 1.0,
+                                                                                    "y": 0.9999999403953552,
+                                                                                    "z": 1.0
+                                                                                },
+                                                                                "children": [],
+                                                                                "customizedComponents": []
+                                                                            }
+                                                                        ],
+                                                                        "customizedComponents": []
+                                                                    }
+                                                                ],
+                                                                "customizedComponents": []
+                                                            }
+                                                        ],
+                                                        "customizedComponents": []
+                                                    }
+                                                ],
+                                                "customizedComponents": []
+                                            }
+                                        ],
+                                        "customizedComponents": []
+                                    }
+                                ],
+                                "customizedComponents": []
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "body",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            "Assets/JKT_Art/Animals/Penguin/Materials/penguin.mat"
+                        ],
+                        "materials": [
+                            {
+                                "name": "penguin",
+                                "assetPath": "Assets/JKT_Art/Animals/Penguin/Materials/penguin.mat",
+                                "shaderName": "Unlit/Texture",
+                                "color": {
+                                    "r": 1.0,
+                                    "g": 1.0,
+                                    "b": 1.0,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": "Assets/JKT_Art/Animals/Penguin/Materials/penguin.tif"
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -1.3575567336943095e-8,
+                            "y": -0.07759237289428711,
+                            "z": -3.1913630071933598e-10
+                        },
+                        "localRotation": {
+                            "x": 270.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "SaloonDoor",
+                "prefabPath": "Assets/HomeDesign/SaloonDoor.prefab",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 9,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 2.609999895095825,
+                    "y": -0.8799999952316284,
+                    "z": 4.929999828338623
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 181.65232849121095,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.428754210472107,
+                    "y": 2.5,
+                    "z": 1.6664189100265504
+                },
+                "children": [
+                    {
+                        "name": "Right]",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/HomeDesign/SaloonWoodMat.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "SaloonWoodMat",
+                                        "assetPath": "Assets/HomeDesign/SaloonWoodMat.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.4000000059604645,
+                                            "g": 0.20000000298023225,
+                                            "b": 0.05000000074505806,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.03349119797348976,
+                                    "y": -0.020337998867034913,
+                                    "z": -0.016138844192028047
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.0000019073486328125,\"y\":0.0,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.0000001192092896,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Left",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/HomeDesign/SaloonWoodMat.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "SaloonWoodMat",
+                                        "assetPath": "Assets/HomeDesign/SaloonWoodMat.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.4000000059604645,
+                                            "g": 0.20000000298023225,
+                                            "b": 0.05000000074505806,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.024802088737487794,
+                                    "y": -0.020337998867034913,
+                                    "z": 0.8553778529167175
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.000003814697265625,\"y\":5.960464477539063e-8,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.000000238418579,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "SaloonDoor",
+                "prefabPath": "Assets/HomeDesign/SaloonDoor.prefab",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 9,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 7.460000038146973,
+                    "y": -0.7200000286102295,
+                    "z": 10.039999961853028
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 181.65232849121095,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.428754210472107,
+                    "y": 2.5,
+                    "z": 1.6664189100265504
+                },
+                "children": [
+                    {
+                        "name": "Right]",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/HomeDesign/SaloonWoodMat.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "SaloonWoodMat",
+                                        "assetPath": "Assets/HomeDesign/SaloonWoodMat.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.4000000059604645,
+                                            "g": 0.20000000298023225,
+                                            "b": 0.05000000074505806,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.03349119797348976,
+                                    "y": -0.020337998867034913,
+                                    "z": -0.016138844192028047
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.0000019073486328125,\"y\":0.0,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.0000001192092896,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Left",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 9,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.2935323119163513,
+                            "y": 0.8381355404853821,
+                            "z": 0.020000362768769265
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 90.48971557617188,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.6000953912734985,
+                            "y": 0.4000000059604645,
+                            "z": 0.6999020576477051
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 9,
+                                "materialPaths": [
+                                    "Assets/HomeDesign/SaloonWoodMat.mat"
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "SaloonWoodMat",
+                                        "assetPath": "Assets/HomeDesign/SaloonWoodMat.mat",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.4000000059604645,
+                                            "g": 0.20000000298023225,
+                                            "b": 0.05000000074505806,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.024802088737487794,
+                                    "y": -0.020337998867034913,
+                                    "z": 0.8553778529167175
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 269.5102844238281,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.7858321666717529,
+                                    "y": 2.130000114440918,
+                                    "z": 0.06665527075529099
+                                },
+                                "children": [],
+                                "customizedComponents": [
+                                    {
+                                        "componentType": "BoxCollider",
+                                        "propertyKeys": [
+                                            "center",
+                                            "size"
+                                        ],
+                                        "propertyValues": [
+                                            "{\"x\":0.000003814697265625,\"y\":5.960464477539063e-8,\"z\":0.0}",
+                                            "{\"x\":1.0000001192092896,\"y\":1.000000238418579,\"z\":1.000000238418579}"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            }
+        ],
+        "customizedComponents": []
+    }
+}

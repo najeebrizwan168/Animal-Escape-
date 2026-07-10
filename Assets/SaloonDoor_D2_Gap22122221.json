@@ -1,0 +1,279 @@
+{
+    "rootName": "SaloonDoor_D2_Gap2",
+    "rootNode": {
+        "name": "SaloonDoor_D2_Gap2",
+        "prefabPath": "Assets/SaloonDoor_D1_Gap1/SaloonDoor_D2_Gap2.prefab",
+        "meshPath": "",
+        "meshName": "",
+        "tag": "Untagged",
+        "layer": 0,
+        "materialPaths": [],
+        "materials": [],
+        "localPosition": {
+            "x": 6.840000152587891,
+            "y": -0.60999995470047,
+            "z": 8.239999771118164
+        },
+        "localRotation": {
+            "x": 0.0,
+            "y": 91.82125091552735,
+            "z": 0.0
+        },
+        "localScale": {
+            "x": 1.090000033378601,
+            "y": 1.9900000095367432,
+            "z": 1.0
+        },
+        "children": [
+            {
+                "name": "LeftLeaf_Pivot",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": -0.5799999833106995,
+                    "y": 1.100000023841858,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Visual",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.8999999761581421,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.2750000059604645,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.550000011920929,
+                            "y": 1.2000000476837159,
+                            "z": 0.03999999910593033
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Hinge",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cylinder",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.8999999761581421,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.05999999865889549,
+                            "y": 0.6000000238418579,
+                            "z": 0.05999999865889549
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.26151493191719057,\"y\":-0.009395361877977848,\"z\":-0.00797681137919426}",
+                            "{\"x\":0.6050227284431458,\"y\":1.2829656600952149,\"z\":0.08048003911972046}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "RightLeaf_Pivot",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.5799999833106995,
+                    "y": 1.100000023841858,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Visual",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.8999999761581421,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": -0.2750000059604645,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.550000011920929,
+                            "y": 1.2000000476837159,
+                            "z": 0.03999999910593033
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Hinge",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cylinder",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.8999999761581421,
+                                    "g": 0.44999998807907107,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.05999999865889549,
+                            "y": 0.6000000238418579,
+                            "z": 0.05999999865889549
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":-0.2675301432609558,\"y\":-0.000009829119335336145,\"z\":0.015711598098278047}",
+                            "{\"x\":0.5622024536132813,\"y\":1.1918295621871949,\"z\":0.058835651725530627}"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "customizedComponents": []
+    }
+}

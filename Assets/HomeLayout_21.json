@@ -1,0 +1,3647 @@
+{
+    "rootName": "HomeLayout_2",
+    "rootNode": {
+        "name": "HomeLayout_2",
+        "prefabPath": "",
+        "meshPath": "",
+        "meshName": "",
+        "tag": "Untagged",
+        "layer": 0,
+        "materialPaths": [],
+        "materials": [],
+        "localPosition": {
+            "x": 25.0,
+            "y": 0.0,
+            "z": -30.0
+        },
+        "localRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "localScale": {
+            "x": 1.0,
+            "y": 0.20000000298023225,
+            "z": 1.0
+        },
+        "children": [
+            {
+                "name": "Floor_Main",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.699999988079071,
+                            "g": 0.6200000047683716,
+                            "b": 0.5,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.5,
+                    "y": -0.10000000149011612,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 15.0,
+                    "y": 0.20000000298023225,
+                    "z": 10.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Floor_Balcony",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.6000000238418579,
+                            "g": 0.5400000214576721,
+                            "b": 0.4399999976158142,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 16.0,
+                    "y": -0.10000000149011612,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 2.0,
+                    "y": 0.20000000298023225,
+                    "z": 4.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_South",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.5,
+                    "y": 1.5,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 15.25,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_North",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.5,
+                    "y": 1.5,
+                    "z": 10.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 15.25,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_West",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 1.5,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 10.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_East_S",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 15.0,
+                    "y": 1.5,
+                    "z": 1.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 3.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ext_East_N",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 15.0,
+                    "y": 1.5,
+                    "z": 8.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 3.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Balcony_South",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 16.0,
+                    "y": 1.5,
+                    "z": 3.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 2.0,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Balcony_North",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 16.0,
+                    "y": 1.5,
+                    "z": 7.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 2.0,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Balcony_East",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 8,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.8799999952316284,
+                            "g": 0.8600000143051148,
+                            "b": 0.800000011920929,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 17.0,
+                    "y": 1.5,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 4.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Ctr_A",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 1.25,
+                    "y": 1.5,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 2.5,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Ctr_B",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 5.349999904632568,
+                    "y": 1.5,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 3.5,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Ctr_C",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 9.5,
+                    "y": 1.5,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 2.799999952316284,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_H_Ctr_D",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 13.600000381469727,
+                    "y": 1.5,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 2.799999952316284,
+                    "y": 3.0,
+                    "z": 0.25
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_Kit_Mast_A",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.0,
+                    "y": 1.5,
+                    "z": 6.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 3.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_Kit_Mast_B",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 7.0,
+                    "y": 1.5,
+                    "z": 9.600000381469727
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 0.800000011920929
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_Stor_Bath_A",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 4.0,
+                    "y": 1.5,
+                    "z": 1.399999976158142
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 2.799999952316284
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_Stor_Bath_B",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 4.0,
+                    "y": 1.5,
+                    "z": 4.5
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 1.0
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_Bath_Guest_A",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 9.0,
+                    "y": 1.5,
+                    "z": 1.25
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 2.5
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Int_V_Bath_Guest_B",
+                "prefabPath": "",
+                "meshPath": "Library/unity default resources",
+                "meshName": "Cube",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [
+                    ""
+                ],
+                "materials": [
+                    {
+                        "name": "Universal Render Pipeline/Lit",
+                        "assetPath": "",
+                        "shaderName": "Universal Render Pipeline/Lit",
+                        "color": {
+                            "r": 0.9300000071525574,
+                            "g": 0.9100000262260437,
+                            "b": 0.8700000047683716,
+                            "a": 1.0
+                        },
+                        "mainTexturePath": ""
+                    }
+                ],
+                "localPosition": {
+                    "x": 9.0,
+                    "y": 1.5,
+                    "z": 4.349999904632568
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.25,
+                    "y": 3.0,
+                    "z": 1.2999999523162842
+                },
+                "children": [],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                            "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "--- ROOM LABELS ---",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "Kitchen_Dining",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 3.5,
+                            "y": 2.0,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Master_Bedroom",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 11.0,
+                            "y": 2.0,
+                            "z": 7.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Storage_Utility",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 2.0,
+                            "y": 2.0,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Main_Bathroom",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 6.5,
+                            "y": 2.0,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Guest_Bedroom",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 12.0,
+                            "y": 2.0,
+                            "z": 2.5
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "Balcony_Entrance",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 8,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 16.0,
+                            "y": 2.0,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "BlockedDoor_D2_StorageBath",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 0.375,
+                            "z": 2.950000047683716
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 0.375,
+                            "z": 3.25
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 0.375,
+                            "z": 3.5500001907348635
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 0.375,
+                            "z": 3.8500001430511476
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.125,
+                            "z": 2.950000047683716
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.125,
+                            "z": 3.25
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.125,
+                            "z": 3.5500001907348635
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.125,
+                            "z": 3.8500001430511476
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.875,
+                            "z": 2.950000047683716
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.875,
+                            "z": 3.25
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.875,
+                            "z": 3.5500001907348635
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 1.875,
+                            "z": 3.8500001430511476
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 2.625,
+                            "z": 2.950000047683716
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 2.625,
+                            "z": 3.25
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 2.625,
+                            "z": 3.5500001907348635
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 4.0,
+                            "y": 2.625,
+                            "z": 3.8500001430511476
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "BlockedDoor_D2_CenterFirst",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.6499998569488527,
+                            "y": 0.375,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.9499998092651369,
+                            "y": 0.375,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.25,
+                            "y": 0.375,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.549999952316284,
+                            "y": 0.375,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.6499998569488527,
+                            "y": 1.125,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.9499998092651369,
+                            "y": 1.125,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.25,
+                            "y": 1.125,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.549999952316284,
+                            "y": 1.125,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.6499998569488527,
+                            "y": 1.875,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.9499998092651369,
+                            "y": 1.875,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.25,
+                            "y": 1.875,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.549999952316284,
+                            "y": 1.875,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.6499998569488527,
+                            "y": 2.625,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 2.9499998092651369,
+                            "y": 2.625,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.6499999761581421,
+                                    "g": 0.4000000059604645,
+                                    "b": 0.15000000596046449,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.25,
+                            "y": 2.625,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "crate",
+                        "prefabPath": "",
+                        "meshPath": "Library/unity default resources",
+                        "meshName": "Cube",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [
+                            ""
+                        ],
+                        "materials": [
+                            {
+                                "name": "Universal Render Pipeline/Lit",
+                                "assetPath": "",
+                                "shaderName": "Universal Render Pipeline/Lit",
+                                "color": {
+                                    "r": 0.550000011920929,
+                                    "g": 0.3199999928474426,
+                                    "b": 0.07999999821186066,
+                                    "a": 1.0
+                                },
+                                "mainTexturePath": ""
+                            }
+                        ],
+                        "localPosition": {
+                            "x": 3.549999952316284,
+                            "y": 2.625,
+                            "z": 5.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 0.30000001192092898,
+                            "y": 0.75,
+                            "z": 0.30000001192092898
+                        },
+                        "children": [],
+                        "customizedComponents": [
+                            {
+                                "componentType": "BoxCollider",
+                                "propertyKeys": [
+                                    "center",
+                                    "size"
+                                ],
+                                "propertyValues": [
+                                    "{\"x\":0.0,\"y\":0.0,\"z\":0.0}",
+                                    "{\"x\":1.0,\"y\":1.0,\"z\":1.0}"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "customizedComponents": []
+            },
+            {
+                "name": "SaloonDoor_D2_Gap1",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 7.64900016784668,
+                    "y": -0.9900000095367432,
+                    "z": 4.960000038146973
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 0.699999988079071,
+                    "y": 2.4000000953674318,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "LeftLeaf_Pivot",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.5799999833106995,
+                            "y": 1.100000023841858,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.2750000059604645,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.550000011920929,
+                                    "y": 1.2000000476837159,
+                                    "z": 0.03999999910593033
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            },
+                            {
+                                "name": "Hinge",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cylinder",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.05999999865889549,
+                                    "y": 0.6000000238418579,
+                                    "z": 0.05999999865889549
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "RightLeaf_Pivot",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 0.5799999833106995,
+                            "y": 1.100000023841858,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": -0.2750000059604645,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.550000011920929,
+                                    "y": 1.2000000476837159,
+                                    "z": 0.03999999910593033
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            },
+                            {
+                                "name": "Hinge",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cylinder",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.05999999865889549,
+                                    "y": 0.6000000238418579,
+                                    "z": 0.05999999865889549
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            }
+                        ],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":1.100000023841858,\"z\":0.0}",
+                            "{\"x\":1.2000000476837159,\"y\":1.7999999523162842,\"z\":1.600000023841858}"
+                        ]
+                    },
+                    {
+                        "componentType": "SaloonDoor",
+                        "propertyKeys": [
+                            "leftLeaf",
+                            "rightLeaf",
+                            "springStrength",
+                            "damping",
+                            "maxOpenAngle"
+                        ],
+                        "propertyValues": [
+                            "SaloonDoor_D2_Gap1/LeftLeaf_Pivot",
+                            "SaloonDoor_D2_Gap1/RightLeaf_Pivot",
+                            "40",
+                            "5",
+                            "90"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SaloonDoor_D2_Gap2",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Untagged",
+                "layer": 0,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 11.549999237060547,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 5.0,
+                    "z": 1.0
+                },
+                "children": [
+                    {
+                        "name": "LeftLeaf_Pivot",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": -0.5799999833106995,
+                            "y": 1.100000023841858,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.2750000059604645,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.550000011920929,
+                                    "y": 1.2000000476837159,
+                                    "z": 0.03999999910593033
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            },
+                            {
+                                "name": "Hinge",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cylinder",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.05999999865889549,
+                                    "y": 0.6000000238418579,
+                                    "z": 0.05999999865889549
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            }
+                        ],
+                        "customizedComponents": []
+                    },
+                    {
+                        "name": "RightLeaf_Pivot",
+                        "prefabPath": "",
+                        "meshPath": "",
+                        "meshName": "",
+                        "tag": "Untagged",
+                        "layer": 0,
+                        "materialPaths": [],
+                        "materials": [],
+                        "localPosition": {
+                            "x": 0.5799999833106995,
+                            "y": 1.100000023841858,
+                            "z": 0.0
+                        },
+                        "localRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "localScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        },
+                        "children": [
+                            {
+                                "name": "Visual",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cube",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": -0.2750000059604645,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.550000011920929,
+                                    "y": 1.2000000476837159,
+                                    "z": 0.03999999910593033
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            },
+                            {
+                                "name": "Hinge",
+                                "prefabPath": "",
+                                "meshPath": "Library/unity default resources",
+                                "meshName": "Cylinder",
+                                "tag": "Untagged",
+                                "layer": 0,
+                                "materialPaths": [
+                                    ""
+                                ],
+                                "materials": [
+                                    {
+                                        "name": "Universal Render Pipeline/Lit",
+                                        "assetPath": "",
+                                        "shaderName": "Universal Render Pipeline/Lit",
+                                        "color": {
+                                            "r": 0.8999999761581421,
+                                            "g": 0.44999998807907107,
+                                            "b": 0.15000000596046449,
+                                            "a": 1.0
+                                        },
+                                        "mainTexturePath": ""
+                                    }
+                                ],
+                                "localPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localRotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "localScale": {
+                                    "x": 0.05999999865889549,
+                                    "y": 0.6000000238418579,
+                                    "z": 0.05999999865889549
+                                },
+                                "children": [],
+                                "customizedComponents": []
+                            }
+                        ],
+                        "customizedComponents": []
+                    }
+                ],
+                "customizedComponents": [
+                    {
+                        "componentType": "BoxCollider",
+                        "propertyKeys": [
+                            "center",
+                            "size"
+                        ],
+                        "propertyValues": [
+                            "{\"x\":0.0,\"y\":1.100000023841858,\"z\":0.0}",
+                            "{\"x\":1.2000000476837159,\"y\":1.7999999523162842,\"z\":1.600000023841858}"
+                        ]
+                    },
+                    {
+                        "componentType": "SaloonDoor",
+                        "propertyKeys": [
+                            "leftLeaf",
+                            "rightLeaf",
+                            "springStrength",
+                            "damping",
+                            "maxOpenAngle"
+                        ],
+                        "propertyValues": [
+                            "SaloonDoor_D2_Gap2/LeftLeaf_Pivot",
+                            "SaloonDoor_D2_Gap2/RightLeaf_Pivot",
+                            "40",
+                            "5",
+                            "90"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "customizedComponents": []
+    }
+}

@@ -8,6 +8,10 @@ TagManager:
   - Wall
   - OuterCorner
   - Room
+  - Obstacle
+  - BlockDoor
+  - blockDoor
+  - Level
   layers:
   - Default
   - TransparentFX

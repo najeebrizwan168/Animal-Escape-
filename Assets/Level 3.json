@@ -1,0 +1,30 @@
+{
+    "rootName": "Level 3",
+    "rootNode": {
+        "name": "Level 3",
+        "prefabPath": "",
+        "meshPath": "",
+        "meshName": "",
+        "tag": "Untagged",
+        "layer": 0,
+        "materialPaths": [],
+        "materials": [],
+        "localPosition": {
+            "x": -20.39613914489746,
+            "y": 0.0,
+            "z": -24.744260787963868
+        },
+        "localRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "localScale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+        },
+        "children": [],
+        "customizedComponents": []
+    }
+}

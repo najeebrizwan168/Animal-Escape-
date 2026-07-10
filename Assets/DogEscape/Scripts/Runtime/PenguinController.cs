@@ -35,6 +35,49 @@ namespace DogEscape
             {
                 Destroy(rb);
             }
+
+            // --- Added Respawn Logic Here ---
+            HandleInitialSpawnPosition();
+        }
+
+        private void HandleInitialSpawnPosition()
+        {
+            // Find the main level object in the hierarchy window
+            GameObject levelObj = GameObject.FindWithTag("Level");
+
+            if (levelObj != null)
+            {
+                // Look through all children inside the level object
+                Transform[] allChildren = levelObj.GetComponentsInChildren<Transform>(true);
+                Transform respawnPoint = null;
+
+                foreach (Transform child in allChildren)
+                {
+                    if (child.CompareTag("Respawn"))
+                    {
+                        respawnPoint = child;
+                        break; // Stop searching once we find it
+                    }
+                }
+
+                if (respawnPoint != null)
+                {
+                    // Temporarily disable CharacterController to manually set the position safely
+                    if (cc != null) cc.enabled = false;
+
+                    transform.position = respawnPoint.position;
+
+                    if (cc != null) cc.enabled = true;
+                }
+                else
+                {
+                    Debug.LogWarning("[PenguinController] Found 'level' object, but no child with the tag 'Respawn' was found.", this);
+                }
+            }
+            else
+            {
+                Debug.LogWarning("[PenguinController] Could not find any GameObject with the tag 'level' in the scene.", this);
+            }
         }
 
         private void Update()
