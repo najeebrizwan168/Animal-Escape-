@@ -611,8 +611,8 @@ Transform:
   m_GameObject: {fileID: 616041725909680216}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 1.2, z: 0.04}
+  m_LocalPosition: {x: -0.1617, y: 0, z: 0.0004}
+  m_LocalScale: {x: 0.3234, y: 1.2, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4640777782548610712}
@@ -3910,7 +3910,7 @@ GameObject:
   - component: {fileID: 7111793610473983051}
   - component: {fileID: 7793999429059742064}
   m_Layer: 0
-  m_Name: c-hunter (2)
+  m_Name: c-hunter 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5912,7 +5912,7 @@ GameObject:
   - component: {fileID: 1442830828173849905}
   - component: {fileID: 924931846731611502}
   m_Layer: 0
-  m_Name: c-hunter
+  m_Name: c-hunter 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6924,8 +6924,8 @@ Transform:
   m_GameObject: {fileID: 5183317653889341118}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 1.2, z: 0.04}
+  m_LocalPosition: {x: 0.1771, y: 0, z: -0.0004}
+  m_LocalScale: {x: 0.35435, y: 1.2, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853827415396110341}
@@ -8602,9 +8602,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6104984532823685533}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.6964678, z: 0, w: -0.717588}
+  m_LocalRotation: {x: -0, y: 0.6964678, z: -0, w: -0.717588}
   m_LocalPosition: {x: -10, y: 0, z: -30}
-  m_LocalScale: {x: 0.6, y: 0.3, z: 0.7}
+  m_LocalScale: {x: 0.6000001, y: 0.3, z: 0.70000005}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7424085722278508565}
@@ -13175,7 +13175,7 @@ GameObject:
   - component: {fileID: 2426157305967038100}
   - component: {fileID: 3526884336433551163}
   m_Layer: 0
-  m_Name: c-hunter (1)
+  m_Name: c-hunter 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

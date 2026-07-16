@@ -8,6 +8,35 @@ namespace HouseGenerator
 
     public class HouseSerializer
     {
+        // Types we skip during generic serialization (handled separately or irrelevant)
+        private static readonly HashSet<string> SkipComponentTypes = new HashSet<string>
+        {
+            "UnityEngine.Transform",
+            "UnityEngine.MeshFilter",
+            "UnityEngine.MeshRenderer",
+            "UnityEngine.CanvasRenderer",
+        };
+
+        // SerializedProperty types we can safely capture
+        private static readonly HashSet<SerializedPropertyType> SupportedPropTypes = new HashSet<SerializedPropertyType>
+        {
+            SerializedPropertyType.Float,
+            SerializedPropertyType.Integer,
+            SerializedPropertyType.Boolean,
+            SerializedPropertyType.String,
+            SerializedPropertyType.Vector2,
+            SerializedPropertyType.Vector3,
+            SerializedPropertyType.Vector4,
+            SerializedPropertyType.Quaternion,
+            SerializedPropertyType.Color,
+            SerializedPropertyType.Rect,
+            SerializedPropertyType.Bounds,
+            SerializedPropertyType.Enum,
+            SerializedPropertyType.ObjectReference,
+            SerializedPropertyType.LayerMask,
+            SerializedPropertyType.AnimationCurve,
+        };
+
         [MenuItem("Tools/House Generator/Export Selected House to JSON", false, 1)]
         public static void ExportSelectedHouse()
         {
@@ -77,17 +106,21 @@ namespace HouseGenerator
             }
         }
 
+        // =====================================================================
+        // SERIALIZATION
+        // =====================================================================
         private static SerializedNode SerializeGameObject(GameObject go)
         {
             SerializedNode node = new SerializedNode();
             node.name = go.name;
             node.tag = go.tag;
             node.layer = go.layer;
+            node.isActive = go.activeSelf;
             node.localPosition = go.transform.localPosition;
             node.localRotation = go.transform.localRotation.eulerAngles;
             node.localScale = go.transform.localScale;
 
-            // Check if this is a prefab instance root
+            // Prefab detection
             if (PrefabUtility.IsOutermostPrefabInstanceRoot(go))
             {
                 GameObject prefabAsset = PrefabUtility.GetCorrespondingObjectFromSource(go);
@@ -97,7 +130,7 @@ namespace HouseGenerator
                 }
             }
 
-            // Save Mesh details if it has a MeshFilter (e.g. custom duplicated doors or primitives)
+            // Save Mesh details
             MeshFilter filter = go.GetComponent<MeshFilter>();
             if (filter != null && filter.sharedMesh != null)
             {
@@ -122,7 +155,6 @@ namespace HouseGenerator
                         sMat.assetPath = AssetDatabase.GetAssetPath(mat);
                         sMat.shaderName = mat.shader != null ? mat.shader.name : "Universal Render Pipeline/Lit";
 
-                        // Save base color
                         if (mat.HasProperty("_BaseColor"))
                             sMat.color = mat.GetColor("_BaseColor");
                         else if (mat.HasProperty("_Color"))
@@ -130,19 +162,12 @@ namespace HouseGenerator
                         else
                             sMat.color = Color.white;
 
-                        // Save main texture path
                         if (mat.mainTexture != null)
-                        {
                             sMat.mainTexturePath = AssetDatabase.GetAssetPath(mat.mainTexture);
-                        }
                         else if (mat.HasProperty("_BaseMap") && mat.GetTexture("_BaseMap") != null)
-                        {
                             sMat.mainTexturePath = AssetDatabase.GetAssetPath(mat.GetTexture("_BaseMap"));
-                        }
                         else if (mat.HasProperty("_MainTex") && mat.GetTexture("_MainTex") != null)
-                        {
                             sMat.mainTexturePath = AssetDatabase.GetAssetPath(mat.GetTexture("_MainTex"));
-                        }
 
                         node.materials.Add(sMat);
                     }
@@ -154,50 +179,152 @@ namespace HouseGenerator
                 }
             }
 
-            // =========================================================================
-            // 🔥 NEW: CUSTOM COMPONENT & VALUE SERIALIZATION
-            // =========================================================================
-            node.customizedComponents = new List<CustomComponentData>();
+            // =====================================================================
+            // GENERIC COMPONENT SERIALIZATION — captures ALL components
+            // =====================================================================
+            node.components = new List<SerializedComponent>();
 
-            // 1. Save HunterController specific properties if it exists
-            HunterController hunter = go.GetComponent<HunterController>();
-            if (hunter != null)
+            Component[] allComponents = go.GetComponents<Component>();
+            foreach (Component comp in allComponents)
             {
-                CustomComponentData hunterData = new CustomComponentData();
-                hunterData.componentType = "HunterController";
+                if (comp == null) continue; // missing script
+                string typeName = comp.GetType().FullName;
 
-                hunterData.propertyKeys.Add("distanceToPointA");
-                hunterData.propertyValues.Add(hunter.distanceToPointA.ToString());
+                if (SkipComponentTypes.Contains(typeName)) continue;
 
-                hunterData.propertyKeys.Add("distanceToPointB");
-                hunterData.propertyValues.Add(hunter.distanceToPointB.ToString());
+                SerializedComponent sc = new SerializedComponent();
+                sc.typeName = typeName;
+                sc.assemblyQualifiedName = comp.GetType().AssemblyQualifiedName;
 
-                hunterData.propertyKeys.Add("moveSpeed");
-                hunterData.propertyValues.Add(hunter.moveSpeed.ToString());
+                // Capture enabled state
+                if (comp is Behaviour b)
+                    sc.enabled = b.enabled;
+                else if (comp is Collider col)
+                    sc.enabled = col.enabled;
+                else
+                    sc.enabled = true;
 
-                hunterData.propertyKeys.Add("canMove");
-                hunterData.propertyValues.Add(hunter.canMove.ToString());
+                // Use SerializedObject to iterate ALL serialized fields
+                SerializedObject so = new SerializedObject(comp);
+                SerializedProperty prop = so.GetIterator();
+                bool enterChildren = true;
 
-                node.customizedComponents.Add(hunterData);
+                while (prop.NextVisible(enterChildren))
+                {
+                    enterChildren = false;
+
+                    // Skip m_Script — we restore via type
+                    if (prop.name == "m_Script") continue;
+                    // Skip m_Material / m_Materials — handled above
+                    if (prop.name == "m_Materials" || prop.name == "m_Material") continue;
+
+                    if (!SupportedPropTypes.Contains(prop.propertyType)) continue;
+
+                    SerializedField sprop = new SerializedField();
+                    sprop.name = prop.propertyPath;
+
+                    switch (prop.propertyType)
+                    {
+                        case SerializedPropertyType.Float:
+                            sprop.type = "float";
+                            sprop.value = prop.floatValue.ToString("R");
+                            break;
+                        case SerializedPropertyType.Integer:
+                            sprop.type = "int";
+                            sprop.value = prop.intValue.ToString();
+                            break;
+                        case SerializedPropertyType.Boolean:
+                            sprop.type = "bool";
+                            sprop.value = prop.boolValue.ToString();
+                            break;
+                        case SerializedPropertyType.String:
+                            sprop.type = "string";
+                            sprop.value = prop.stringValue;
+                            break;
+                        case SerializedPropertyType.Vector2:
+                            sprop.type = "Vector2";
+                            sprop.value = JsonUtility.ToJson(prop.vector2Value);
+                            break;
+                        case SerializedPropertyType.Vector3:
+                            sprop.type = "Vector3";
+                            sprop.value = JsonUtility.ToJson(prop.vector3Value);
+                            break;
+                        case SerializedPropertyType.Vector4:
+                            sprop.type = "Vector4";
+                            sprop.value = JsonUtility.ToJson(prop.vector4Value);
+                            break;
+                        case SerializedPropertyType.Quaternion:
+                            sprop.type = "Quaternion";
+                            sprop.value = JsonUtility.ToJson(prop.quaternionValue);
+                            break;
+                        case SerializedPropertyType.Color:
+                            sprop.type = "Color";
+                            sprop.value = JsonUtility.ToJson(prop.colorValue);
+                            break;
+                        case SerializedPropertyType.Rect:
+                            sprop.type = "Rect";
+                            sprop.value = JsonUtility.ToJson(prop.rectValue);
+                            break;
+                        case SerializedPropertyType.Bounds:
+                            sprop.type = "Bounds";
+                            sprop.value = JsonUtility.ToJson(prop.boundsValue);
+                            break;
+                        case SerializedPropertyType.Enum:
+                            sprop.type = "enum";
+                            sprop.value = prop.enumValueIndex.ToString();
+                            break;
+                        case SerializedPropertyType.LayerMask:
+                            sprop.type = "LayerMask";
+                            sprop.value = prop.intValue.ToString();
+                            break;
+                        case SerializedPropertyType.AnimationCurve:
+                            sprop.type = "AnimationCurve";
+                            sprop.value = JsonUtility.ToJson(prop.animationCurveValue);
+                            break;
+                        case SerializedPropertyType.ObjectReference:
+                            Object refObj = prop.objectReferenceValue;
+                            if (refObj != null)
+                            {
+                                string assetPath = AssetDatabase.GetAssetPath(refObj);
+                                if (!string.IsNullOrEmpty(assetPath))
+                                {
+                                    // Project asset reference (prefab, material, scriptable object, etc.)
+                                    sprop.type = "ObjectRef";
+                                    sprop.objectRefPath = assetPath;
+                                    sprop.value = refObj.name;
+                                }
+                                else if (refObj is GameObject sceneGo)
+                                {
+                                    // Scene object reference — store hierarchy path
+                                    sprop.type = "SceneRef";
+                                    sprop.value = GetHierarchyPath(sceneGo.transform);
+                                }
+                                else if (refObj is Component sceneComp)
+                                {
+                                    sprop.type = "SceneRef";
+                                    sprop.value = GetHierarchyPath(sceneComp.transform);
+                                }
+                                else
+                                {
+                                    continue; // Can't serialize this reference
+                                }
+                            }
+                            else
+                            {
+                                continue; // Null ref — skip
+                            }
+                            break;
+                        default:
+                            continue;
+                    }
+
+                    sc.properties.Add(sprop);
+                }
+
+                node.components.Add(sc);
             }
 
-            // 2. Save BoxCollider if it was added dynamically or modified
-            BoxCollider boxCollider = go.GetComponent<BoxCollider>();
-            if (boxCollider != null)
-            {
-                CustomComponentData boxData = new CustomComponentData();
-                boxData.componentType = "BoxCollider";
-                boxData.propertyKeys.Add("center");
-                boxData.propertyValues.Add(JsonUtility.ToJson(boxCollider.center));
-
-                boxData.propertyKeys.Add("size");
-                boxData.propertyValues.Add(JsonUtility.ToJson(boxCollider.size));
-
-                node.customizedComponents.Add(boxData);
-            }
-            // =========================================================================
-
-            // Recursively serialize children
+            // Recursively serialize ALL children
             foreach (Transform child in go.transform)
             {
                 node.children.Add(SerializeGameObject(child.gameObject));
@@ -206,6 +333,23 @@ namespace HouseGenerator
             return node;
         }
 
+        /// <summary>
+        /// Gets a hierarchy path like "Level9/Room1/Hunter" for scene object references.
+        /// </summary>
+        private static string GetHierarchyPath(Transform t)
+        {
+            string path = t.name;
+            while (t.parent != null)
+            {
+                t = t.parent;
+                path = t.name + "/" + path;
+            }
+            return path;
+        }
+
+        // =====================================================================
+        // DESERIALIZATION
+        // =====================================================================
         private static GameObject DeserializeGameObject(SerializedNode node, Transform parent)
         {
             GameObject go = null;
@@ -221,7 +365,6 @@ namespace HouseGenerator
                 }
             }
 
-            // If it doesn't exist, we must instantiate or create it
             if (go == null)
             {
                 isNew = true;
@@ -240,13 +383,16 @@ namespace HouseGenerator
                 }
             }
 
-            // Parent the new object
+            // Parent
             if (parent != null && isNew)
             {
                 go.transform.SetParent(parent);
             }
 
-            // Set Transforms relative to parent
+            go.name = node.name;
+            go.SetActive(node.isActive);
+
+            // Transforms
             go.transform.localPosition = node.localPosition;
             go.transform.localRotation = Quaternion.Euler(node.localRotation);
             go.transform.localScale = node.localScale;
@@ -255,16 +401,16 @@ namespace HouseGenerator
             if (!string.IsNullOrEmpty(node.tag) && node.tag != "Untagged")
             {
                 try { go.tag = node.tag; }
-                catch { /* Tag not in project — skip */ }
+                catch { }
             }
 
-            // Restore Layer (skip 0 = Default, that's already the default)
+            // Restore Layer
             if (node.layer > 0 && node.layer <= 31)
             {
                 go.layer = node.layer;
             }
 
-            // Apply Mesh and Materials to newly created gameobjects (like primitives/custom objects)
+            // Apply Mesh and Materials for newly created GameObjects
             if (isNew)
             {
                 if (!string.IsNullOrEmpty(node.meshPath) && !string.IsNullOrEmpty(node.meshName))
@@ -297,50 +443,37 @@ namespace HouseGenerator
                             var sMat = node.materials[i];
                             if (sMat == null) continue;
 
-                            // 1. Try loading directly from AssetDatabase if it has a valid asset path
                             if (!string.IsNullOrEmpty(sMat.assetPath))
                             {
                                 mats[i] = AssetDatabase.LoadAssetAtPath<Material>(sMat.assetPath);
                             }
 
-                            // 2. If no asset found (e.g. procedurally created/instanced material), recreate it
                             if (mats[i] == null)
                             {
                                 Shader shader = Shader.Find(sMat.shaderName);
-                                if (shader == null)
-                                {
-                                    shader = Shader.Find("Universal Render Pipeline/Lit");
-                                }
-                                if (shader == null)
-                                {
-                                    shader = Shader.Find("Standard");
-                                }
+                                if (shader == null) shader = Shader.Find("Universal Render Pipeline/Lit");
+                                if (shader == null) shader = Shader.Find("Standard");
 
                                 if (shader != null)
                                 {
                                     Material newMat = new Material(shader);
                                     newMat.name = sMat.name;
-
                                     if (newMat.HasProperty("_BaseColor"))
                                         newMat.SetColor("_BaseColor", sMat.color);
                                     else if (newMat.HasProperty("_Color"))
                                         newMat.SetColor("_Color", sMat.color);
-
                                     if (!string.IsNullOrEmpty(sMat.mainTexturePath))
                                     {
                                         Texture2D tex = AssetDatabase.LoadAssetAtPath<Texture2D>(sMat.mainTexturePath);
                                         if (tex != null)
                                         {
                                             newMat.mainTexture = tex;
-                                            
-                                            // Set texture property for URP/Standard shader explicitly if needed
                                             if (newMat.HasProperty("_BaseMap"))
                                                 newMat.SetTexture("_BaseMap", tex);
                                             else if (newMat.HasProperty("_MainTex"))
                                                 newMat.SetTexture("_MainTex", tex);
                                         }
                                     }
-
                                     mats[i] = newMat;
                                 }
                             }
@@ -362,55 +495,144 @@ namespace HouseGenerator
                 }
             }
 
-            // Recursively deserialize children
+            // =====================================================================
+            // RECURSIVELY DESERIALIZE ALL CHILDREN
+            // =====================================================================
             foreach (SerializedNode childNode in node.children)
             {
                 DeserializeGameObject(childNode, go.transform);
             }
 
-            // =========================================================================
-            // 🔥 NEW: RESTORE CUSTOM COMPONENT VALUES AT RUNTIME / IMPORT
-            // =========================================================================
+            // =====================================================================
+            // RESTORE ALL GENERIC COMPONENTS
+            // =====================================================================
+            if (node.components != null && node.components.Count > 0)
+            {
+                foreach (var sc in node.components)
+                {
+                    // Skip Transform, MeshFilter, MeshRenderer — already handled
+                    if (sc.typeName == "UnityEngine.Transform" || sc.typeName == "UnityEngine.MeshFilter" ||
+                        sc.typeName == "UnityEngine.MeshRenderer") continue;
+
+                    System.Type compType = System.Type.GetType(sc.assemblyQualifiedName);
+                    if (compType == null)
+                    {
+                        foreach (var asm in System.AppDomain.CurrentDomain.GetAssemblies())
+                        {
+                            compType = asm.GetType(sc.typeName);
+                            if (compType != null) break;
+                        }
+                    }
+                    if (compType == null)
+                    {
+                        Debug.LogWarning($"[HouseSerializer] Cannot find type '{sc.typeName}' to restore on '{go.name}'");
+                        continue;
+                    }
+
+                    Component comp = go.GetComponent(compType);
+                    if (comp == null)
+                    {
+                        comp = go.AddComponent(compType);
+                    }
+                    if (comp == null)
+                    {
+                        Debug.LogWarning($"[HouseSerializer] Failed to add component '{sc.typeName}' on '{go.name}'");
+                        continue;
+                    }
+
+                    // Restore enabled state
+                    if (comp is Behaviour b)
+                        b.enabled = sc.enabled;
+                    else if (comp is Collider col)
+                        col.enabled = sc.enabled;
+
+                    // Restore properties via SerializedObject
+                    var so = new SerializedObject(comp);
+                    foreach (var sprop in sc.properties)
+                    {
+                        var sp = so.FindProperty(sprop.name);
+                        if (sp == null) continue;
+
+                        try
+                        {
+                            switch (sprop.type)
+                            {
+                                case "float": sp.floatValue = float.Parse(sprop.value); break;
+                                case "int": sp.intValue = int.Parse(sprop.value); break;
+                                case "bool": sp.boolValue = bool.Parse(sprop.value); break;
+                                case "string": sp.stringValue = sprop.value; break;
+                                case "Vector2": sp.vector2Value = JsonUtility.FromJson<Vector2>(sprop.value); break;
+                                case "Vector3": sp.vector3Value = JsonUtility.FromJson<Vector3>(sprop.value); break;
+                                case "Vector4": sp.vector4Value = JsonUtility.FromJson<Vector4>(sprop.value); break;
+                                case "Quaternion": sp.quaternionValue = JsonUtility.FromJson<Quaternion>(sprop.value); break;
+                                case "Color": sp.colorValue = JsonUtility.FromJson<Color>(sprop.value); break;
+                                case "Rect": sp.rectValue = JsonUtility.FromJson<Rect>(sprop.value); break;
+                                case "Bounds": sp.boundsValue = JsonUtility.FromJson<Bounds>(sprop.value); break;
+                                case "enum": sp.enumValueIndex = int.Parse(sprop.value); break;
+                                case "LayerMask": sp.intValue = int.Parse(sprop.value); break;
+                                case "AnimationCurve":
+                                    sp.animationCurveValue = JsonUtility.FromJson<AnimationCurve>(sprop.value);
+                                    break;
+                                case "ObjectRef":
+                                    if (!string.IsNullOrEmpty(sprop.objectRefPath))
+                                    {
+                                        var obj = AssetDatabase.LoadAssetAtPath<Object>(sprop.objectRefPath);
+                                        if (obj != null)
+                                            sp.objectReferenceValue = obj;
+                                    }
+                                    break;
+                                case "SceneRef":
+                                    if (!string.IsNullOrEmpty(sprop.value))
+                                    {
+                                        GameObject found = GameObject.Find(sprop.value);
+                                        if (found != null && sp.propertyType == SerializedPropertyType.ObjectReference)
+                                            sp.objectReferenceValue = found;
+                                    }
+                                    break;
+                            }
+                        }
+                        catch (System.Exception ex)
+                        {
+                            Debug.LogWarning($"[HouseSerializer] Failed to restore '{sprop.name}' on '{sc.typeName}': {ex.Message}");
+                        }
+                    }
+                    so.ApplyModifiedProperties();
+                }
+            }
+
+            // Legacy custom component restore (backward compat with old JSONs)
             if (node.customizedComponents != null && node.customizedComponents.Count > 0)
             {
                 foreach (var compData in node.customizedComponents)
                 {
-                    // 1. Restore HunterController properties
                     if (compData.componentType == "HunterController")
                     {
                         HunterController hunter = go.GetComponent<HunterController>();
-                        if (hunter == null) hunter = go.AddComponent<HunterController>(); 
-
+                        if (hunter == null) hunter = go.AddComponent<HunterController>();
                         for (int i = 0; i < compData.propertyKeys.Count; i++)
                         {
                             string key = compData.propertyKeys[i];
                             string val = compData.propertyValues[i];
-
                             if (key == "distanceToPointA") hunter.distanceToPointA = float.Parse(val);
                             if (key == "distanceToPointB") hunter.distanceToPointB = float.Parse(val);
                             if (key == "moveSpeed") hunter.moveSpeed = float.Parse(val);
                             if (key == "canMove") hunter.canMove = bool.Parse(val);
                         }
                     }
-
-                    // 2. Restore BoxCollider properties
                     if (compData.componentType == "BoxCollider")
                     {
                         BoxCollider boxCollider = go.GetComponent<BoxCollider>();
                         if (boxCollider == null) boxCollider = go.AddComponent<BoxCollider>();
-
                         for (int i = 0; i < compData.propertyKeys.Count; i++)
                         {
                             string key = compData.propertyKeys[i];
                             string val = compData.propertyValues[i];
-
                             if (key == "center") boxCollider.center = JsonUtility.FromJson<Vector3>(val);
                             if (key == "size") boxCollider.size = JsonUtility.FromJson<Vector3>(val);
                         }
                     }
                 }
             }
-            // =========================================================================
 
             return go;
         }

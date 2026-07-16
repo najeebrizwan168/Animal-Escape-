@@ -16,10 +16,31 @@ namespace HouseGenerator
         public string mainTexturePath;
     }
 
+    // Generic property storage: key=fieldName, value=json or string representation
+    [System.Serializable]
+    public class SerializedField
+    {
+        public string name;
+        public string type;  // "float","int","bool","string","Vector3","Quaternion","Color","ObjectRef","enum"
+        public string value;
+        public string objectRefPath; // AssetDatabase path for object references
+    }
+
+    // Generic component storage
+    [System.Serializable]
+    public class SerializedComponent
+    {
+        public string typeName;           // Full type name e.g. "UnityEngine.BoxCollider", "HunterController"
+        public string assemblyQualifiedName; // For AddComponent via reflection
+        public bool enabled = true;
+        public List<SerializedField> properties = new List<SerializedField>();
+    }
+
+    // Legacy support
     [System.Serializable]
     public class CustomComponentData
     {
-        public string componentType; // e.g., "HunterController", "BoxCollider"
+        public string componentType;
         public List<string> propertyKeys = new List<string>();
         public List<string> propertyValues = new List<string>();
     }
@@ -33,6 +54,7 @@ namespace HouseGenerator
         public string meshName;
         public string tag;
         public int layer;
+        public bool isActive = true;
         public List<string> materialPaths;
         public List<SerializedMaterial> materials = new List<SerializedMaterial>();
         public Vector3 localPosition;
@@ -40,7 +62,10 @@ namespace HouseGenerator
         public Vector3 localScale;
         public List<SerializedNode> children = new List<SerializedNode>();
 
-        // Yeh list har node ke components aur unki modified values save karegi
+        // NEW: generic component data
+        public List<SerializedComponent> components = new List<SerializedComponent>();
+
+        // Legacy
         public List<CustomComponentData> customizedComponents = new List<CustomComponentData>();
     }
 
@@ -88,7 +113,6 @@ namespace HouseGenerator
 
         public void GenerateHouse()
         {
-            // Build lookup dictionaries
             prefabDict.Clear();
             foreach (var mapping in prefabMappings)
             {
@@ -111,20 +135,14 @@ namespace HouseGenerator
             HouseData data = JsonUtility.FromJson<HouseData>(houseJsonFile.text);
             if (data == null || data.rootNode == null) return;
 
-            // Destroy any existing children under this transform
             for (int i = transform.childCount - 1; i >= 0; i--)
             {
                 if (Application.isPlaying)
-                {
                     Destroy(transform.GetChild(i).gameObject);
-                }
                 else
-                {
                     DestroyImmediate(transform.GetChild(i).gameObject);
-                }
             }
 
-            // Reconstruct the root node so its prefab (if any) is properly instantiated!
             InstantiateNode(data.rootNode, transform, null, true);
         }
 
@@ -135,7 +153,6 @@ namespace HouseGenerator
 
             if (go == null)
             {
-                // Try to spawn from prefab mappings
                 if (!string.IsNullOrEmpty(node.prefabPath))
                 {
                     if (prefabDict.TryGetValue(node.prefabPath, out GameObject prefab))
@@ -148,60 +165,50 @@ namespace HouseGenerator
                     }
                 }
 
-                // If not spawned (or not a prefab), create standard GameObject or Primitive
                 if (go == null)
                 {
                     if (!string.IsNullOrEmpty(node.meshName))
                     {
                         if (node.meshName == "Cube")
-                        {
                             go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                        }
                         else if (node.meshName == "Plane")
-                        {
                             go = GameObject.CreatePrimitive(PrimitiveType.Plane);
-                        }
+                        else if (node.meshName == "Sphere")
+                            go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                        else if (node.meshName == "Cylinder")
+                            go = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+                        else if (node.meshName == "Capsule")
+                            go = GameObject.CreatePrimitive(PrimitiveType.Capsule);
                         else
                         {
-                            // Try to find a template in the already instantiated objects (e.g. duplicate door)
                             GameObject template = FindTemplateByMeshName(this.transform, node.meshName);
                             if (template != null)
                             {
                                 go = Instantiate(template);
-                                // Destroy any children on the duplicated template, as they might represent
-                                // nested objects that we will recreate from the JSON anyway.
                                 for (int i = go.transform.childCount - 1; i >= 0; i--)
-                                {
                                     DestroyImmediate(go.transform.GetChild(i).gameObject);
-                                }
                             }
                         }
                     }
 
                     if (go == null)
-                    {
                         go = new GameObject(node.name);
-                    }
                 }
             }
 
             go.name = node.name;
+            go.SetActive(node.isActive);
 
-            // Restore Tag — use try/catch because Unity throws if the tag doesn't exist in the project
             if (!string.IsNullOrEmpty(node.tag) && node.tag != "Untagged")
             {
                 try { go.tag = node.tag; }
-                catch { /* Tag not defined in project — skip silently */ }
+                catch { }
             }
 
-            // Restore Layer — only apply when non-zero (0 = Default which is the new-object default anyway)
             if (node.layer > 0 && node.layer <= 31)
-            {
                 go.layer = node.layer;
-            }
 
             go.transform.SetParent(parent);
-
 
             if (isRoot)
             {
@@ -216,7 +223,7 @@ namespace HouseGenerator
                 go.transform.localScale = node.localScale;
             }
 
-            // Apply materials if custom mesh/primitive
+            // Apply materials
             if (isNew)
             {
                 Renderer renderer = go.GetComponent<Renderer>();
@@ -230,41 +237,27 @@ namespace HouseGenerator
                             var sMat = node.materials[i];
                             if (sMat == null) continue;
 
-                            // 1. Try mapping dictionary first
                             if (!string.IsNullOrEmpty(sMat.assetPath) && materialDict.TryGetValue(sMat.assetPath, out Material mappedMat))
-                            {
                                 mats[i] = mappedMat;
-                            }
 #if UNITY_EDITOR
-                            // 2. If in editor, try loading from asset path directly
                             if (mats[i] == null && !string.IsNullOrEmpty(sMat.assetPath))
-                            {
                                 mats[i] = AssetDatabase.LoadAssetAtPath<Material>(sMat.assetPath);
-                            }
 #endif
-                            // 3. Fallback: recreate the material dynamically (preserves color & shader)
                             if (mats[i] == null)
                             {
                                 Shader shader = Shader.Find(sMat.shaderName);
-                                if (shader == null)
-                                {
-                                    shader = Shader.Find("Universal Render Pipeline/Lit");
-                                }
-                                if (shader == null)
-                                {
-                                    shader = Shader.Find("Standard");
-                                }
-                                
+                                if (shader == null) shader = Shader.Find("Universal Render Pipeline/Lit");
+                                if (shader == null) shader = Shader.Find("Standard");
+
                                 if (shader != null)
                                 {
                                     Material newMat = new Material(shader);
                                     newMat.name = sMat.name;
-                                    
+
                                     if (newMat.HasProperty("_BaseColor"))
                                         newMat.SetColor("_BaseColor", sMat.color);
                                     else if (newMat.HasProperty("_Color"))
                                         newMat.SetColor("_Color", sMat.color);
-
 #if UNITY_EDITOR
                                     if (!string.IsNullOrEmpty(sMat.mainTexturePath))
                                     {
@@ -293,9 +286,7 @@ namespace HouseGenerator
                             if (!string.IsNullOrEmpty(node.materialPaths[i]))
                             {
                                 if (materialDict.TryGetValue(node.materialPaths[i], out Material mat))
-                                {
                                     mats[i] = mat;
-                                }
                             }
                         }
                         renderer.sharedMaterials = mats;
@@ -303,14 +294,11 @@ namespace HouseGenerator
                 }
             }
 
-            // Gather all available children of `go`
+            // Recurse children
             List<Transform> availableChildren = new List<Transform>();
             for (int i = 0; i < go.transform.childCount; i++)
-            {
                 availableChildren.Add(go.transform.GetChild(i));
-            }
 
-            // Recursively instantiate children, correctly mapping to existing prefab children
             foreach (var childNode in node.children)
             {
                 Transform foundExisting = null;
@@ -323,19 +311,19 @@ namespace HouseGenerator
                         break;
                     }
                 }
-
                 InstantiateNode(childNode, go.transform, foundExisting, false);
             }
 
-            // Any remaining transforms in `availableChildren` were NOT in the JSON!
-            // (e.g. the user deleted some default walls/doors from the base prefab)
             foreach (var leftover in availableChildren)
             {
                 if (Application.isPlaying) Destroy(leftover.gameObject);
                 else DestroyImmediate(leftover.gameObject);
             }
 
-            // Restore custom component values (HunterController, BoxCollider, etc.)
+            // Restore generic components
+            RestoreComponents(go, node);
+
+            // Legacy custom component restore
             if (node.customizedComponents != null && node.customizedComponents.Count > 0)
             {
                 foreach (var compData in node.customizedComponents)
@@ -372,13 +360,115 @@ namespace HouseGenerator
             return go;
         }
 
+        private void RestoreComponents(GameObject go, SerializedNode node)
+        {
+            if (node.components == null || node.components.Count == 0) return;
+
+#if UNITY_EDITOR
+            foreach (var sc in node.components)
+            {
+                // Skip Transform, MeshFilter, MeshRenderer, Renderer — already handled
+                if (sc.typeName == "UnityEngine.Transform" || sc.typeName == "UnityEngine.MeshFilter" ||
+                    sc.typeName == "UnityEngine.MeshRenderer") continue;
+
+                System.Type compType = System.Type.GetType(sc.assemblyQualifiedName);
+                if (compType == null)
+                {
+                    // Try finding in all loaded assemblies
+                    foreach (var asm in System.AppDomain.CurrentDomain.GetAssemblies())
+                    {
+                        compType = asm.GetType(sc.typeName);
+                        if (compType != null) break;
+                    }
+                }
+                if (compType == null)
+                {
+                    Debug.LogWarning($"[HouseSerializer] Cannot find type '{sc.typeName}' to restore on '{go.name}'");
+                    continue;
+                }
+
+                Component comp = go.GetComponent(compType);
+                if (comp == null)
+                {
+                    comp = go.AddComponent(compType);
+                }
+
+                if (comp == null)
+                {
+                    Debug.LogWarning($"[HouseSerializer] Failed to add component '{sc.typeName}' on '{go.name}'");
+                    continue;
+                }
+
+                // Restore enabled state for Behaviours
+                if (comp is Behaviour b)
+                    b.enabled = sc.enabled;
+                else if (comp is Collider col)
+                    col.enabled = sc.enabled;
+
+                // Restore properties via SerializedObject
+                var so = new SerializedObject(comp);
+                foreach (var prop in sc.properties)
+                {
+                    var sp = so.FindProperty(prop.name);
+                    if (sp == null) continue;
+
+                    try
+                    {
+                        switch (prop.type)
+                        {
+                            case "float": sp.floatValue = float.Parse(prop.value); break;
+                            case "int": sp.intValue = int.Parse(prop.value); break;
+                            case "bool": sp.boolValue = bool.Parse(prop.value); break;
+                            case "string": sp.stringValue = prop.value; break;
+                            case "Vector2": sp.vector2Value = JsonUtility.FromJson<Vector2>(prop.value); break;
+                            case "Vector3": sp.vector3Value = JsonUtility.FromJson<Vector3>(prop.value); break;
+                            case "Vector4": sp.vector4Value = JsonUtility.FromJson<Vector4>(prop.value); break;
+                            case "Quaternion": sp.quaternionValue = JsonUtility.FromJson<Quaternion>(prop.value); break;
+                            case "Color": sp.colorValue = JsonUtility.FromJson<Color>(prop.value); break;
+                            case "Rect": sp.rectValue = JsonUtility.FromJson<Rect>(prop.value); break;
+                            case "Bounds": sp.boundsValue = JsonUtility.FromJson<Bounds>(prop.value); break;
+                            case "enum": sp.enumValueIndex = int.Parse(prop.value); break;
+                            case "ObjectRef":
+                                if (!string.IsNullOrEmpty(prop.objectRefPath))
+                                {
+                                    var obj = AssetDatabase.LoadAssetAtPath<Object>(prop.objectRefPath);
+                                    if (obj != null)
+                                        sp.objectReferenceValue = obj;
+                                }
+                                break;
+                            case "SceneRef":
+                                // Scene object references by name/path — try to find in scene
+                                if (!string.IsNullOrEmpty(prop.value))
+                                {
+                                    GameObject found = GameObject.Find(prop.value);
+                                    if (found != null)
+                                    {
+                                        if (sp.propertyType == SerializedPropertyType.ObjectReference)
+                                            sp.objectReferenceValue = found;
+                                    }
+                                }
+                                break;
+                            case "LayerMask": sp.intValue = int.Parse(prop.value); break;
+                            case "AnimationCurve":
+                                sp.animationCurveValue = JsonUtility.FromJson<AnimationCurve>(prop.value);
+                                break;
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Debug.LogWarning($"[HouseSerializer] Failed to restore property '{prop.name}' on '{sc.typeName}': {ex.Message}");
+                    }
+                }
+                so.ApplyModifiedProperties();
+            }
+#endif
+        }
+
         private GameObject FindTemplateByMeshName(Transform root, string meshName)
         {
             MeshFilter filter = root.GetComponent<MeshFilter>();
             if (filter != null && filter.sharedMesh != null && filter.sharedMesh.name == meshName)
-            {
                 return root.gameObject;
-            }
             foreach (Transform child in root)
             {
                 GameObject found = FindTemplateByMeshName(child, meshName);
@@ -408,7 +498,6 @@ namespace HouseGenerator
             HashSet<string> materialPaths = new HashSet<string>();
             FindPaths(data.rootNode, prefabPaths, materialPaths);
 
-            // Update prefab mappings
             var newPrefabMappings = new List<PrefabMapping>();
             foreach (string path in prefabPaths)
             {
@@ -418,7 +507,6 @@ namespace HouseGenerator
             }
             prefabMappings = newPrefabMappings;
 
-            // Update material mappings
             var newMaterialMappings = new List<MaterialMapping>();
             foreach (string path in materialPaths)
             {

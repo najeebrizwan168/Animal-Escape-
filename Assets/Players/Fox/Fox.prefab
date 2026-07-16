@@ -1420,9 +1420,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6995896261670622023}
   - component: {fileID: 8167187781729983075}
-  - component: {fileID: 6772740703120473434}
-  - component: {fileID: 8770921329653297452}
   - component: {fileID: 3419167709284664243}
+  - component: {fileID: 6686158833994154665}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -1469,54 +1468,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &6772740703120473434
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9083967246014211635}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &8770921329653297452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9083967246014211635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2bc313cc64888e45b54ba563132caab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DogEscape.DogController
-  moveSpeed: 20
-  runSpeed: 8
-  rotationSpeed: 720
-  walkNoiseRadius: 2
-  runNoiseRadius: 6
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  minDragDistance: 20
 --- !u!143 &3419167709284664243
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1542,3 +1493,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.94, z: 0}
+--- !u!114 &6686158833994154665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083967246014211635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b7fcb50a9c9dc4eb1ba1b067a0769c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DogEscape.PenguinController
+  moveSpeed: 8
+  rotationSpeed: 720
+  gravity: -20
+  minDragDistance: 20
