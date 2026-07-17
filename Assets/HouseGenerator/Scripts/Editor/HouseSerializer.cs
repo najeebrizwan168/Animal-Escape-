@@ -121,7 +121,7 @@ namespace HouseGenerator
             node.localScale = go.transform.localScale;
 
             // Prefab detection
-            if (PrefabUtility.IsOutermostPrefabInstanceRoot(go))
+            if (PrefabUtility.IsOutermostPrefabInstanceRoot(go) || PrefabUtility.IsAnyPrefabInstanceRoot(go))
             {
                 GameObject prefabAsset = PrefabUtility.GetCorrespondingObjectFromSource(go);
                 if (prefabAsset != null)
@@ -579,14 +579,53 @@ namespace HouseGenerator
                                         var obj = AssetDatabase.LoadAssetAtPath<Object>(sprop.objectRefPath);
                                         if (obj != null)
                                             sp.objectReferenceValue = obj;
+
+                                        // If direct load didn't set property (e.g. FBX sub-asset like Mesh inside FBX model), search sub-assets
+                                        if (sp.objectReferenceValue == null && !string.IsNullOrEmpty(sprop.objectRefPath))
+                                        {
+                                            Object[] allSubAssets = AssetDatabase.LoadAllAssetsAtPath(sprop.objectRefPath);
+                                            foreach (Object subAsset in allSubAssets)
+                                            {
+                                                if (subAsset != null && subAsset.name == sprop.value)
+                                                {
+                                                    sp.objectReferenceValue = subAsset;
+                                                    if (sp.objectReferenceValue != null) break;
+                                                }
+                                            }
+                                        }
                                     }
                                     break;
                                 case "SceneRef":
                                     if (!string.IsNullOrEmpty(sprop.value))
                                     {
                                         GameObject found = GameObject.Find(sprop.value);
+                                        if (found == null)
+                                        {
+                                            Transform rootT = go.transform;
+                                            while (rootT.parent != null) rootT = rootT.parent;
+
+                                            int firstSlash = sprop.value.IndexOf('/');
+                                            if (firstSlash >= 0 && firstSlash < sprop.value.Length - 1)
+                                            {
+                                                string subPath = sprop.value.Substring(firstSlash + 1);
+                                                Transform relTransform = rootT.Find(subPath);
+                                                if (relTransform != null) found = relTransform.gameObject;
+                                            }
+                                            if (found == null)
+                                            {
+                                                Transform directFind = rootT.Find(sprop.value);
+                                                if (directFind != null) found = directFind.gameObject;
+                                            }
+                                        }
+
                                         if (found != null && sp.propertyType == SerializedPropertyType.ObjectReference)
+                                        {
                                             sp.objectReferenceValue = found;
+                                            if (sp.objectReferenceValue == null)
+                                            {
+                                                sp.objectReferenceValue = found.transform;
+                                            }
+                                        }
                                     }
                                     break;
                             }

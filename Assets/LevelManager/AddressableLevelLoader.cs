@@ -683,14 +683,52 @@ public class AddressableLevelLoader : MonoBehaviour
                             {
                                 var obj = AssetDatabase.LoadAssetAtPath<Object>(prop.objectRefPath);
                                 if (obj != null) sp.objectReferenceValue = obj;
+
+                                if (sp.objectReferenceValue == null && !string.IsNullOrEmpty(prop.objectRefPath))
+                                {
+                                    Object[] allSubAssets = AssetDatabase.LoadAllAssetsAtPath(prop.objectRefPath);
+                                    foreach (Object subAsset in allSubAssets)
+                                    {
+                                        if (subAsset != null && subAsset.name == prop.value)
+                                        {
+                                            sp.objectReferenceValue = subAsset;
+                                            if (sp.objectReferenceValue != null) break;
+                                        }
+                                    }
+                                }
                             }
                             break;
                         case "SceneRef":
                             if (!string.IsNullOrEmpty(prop.value))
                             {
                                 GameObject found = GameObject.Find(prop.value);
+                                if (found == null)
+                                {
+                                    Transform rootT = go.transform;
+                                    while (rootT.parent != null) rootT = rootT.parent;
+
+                                    int firstSlash = prop.value.IndexOf('/');
+                                    if (firstSlash >= 0 && firstSlash < prop.value.Length - 1)
+                                    {
+                                        string subPath = prop.value.Substring(firstSlash + 1);
+                                        Transform relTransform = rootT.Find(subPath);
+                                        if (relTransform != null) found = relTransform.gameObject;
+                                    }
+                                    if (found == null)
+                                    {
+                                        Transform directFind = rootT.Find(prop.value);
+                                        if (directFind != null) found = directFind.gameObject;
+                                    }
+                                }
+
                                 if (found != null && sp.propertyType == SerializedPropertyType.ObjectReference)
+                                {
                                     sp.objectReferenceValue = found;
+                                    if (sp.objectReferenceValue == null)
+                                    {
+                                        sp.objectReferenceValue = found.transform;
+                                    }
+                                }
                             }
                             break;
                     }
