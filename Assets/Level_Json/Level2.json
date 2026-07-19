@@ -5,15 +5,15 @@
         "prefabPath": "Assets/Level2/Level2.prefab",
         "meshPath": "",
         "meshName": "",
-        "tag": "Untagged",
+        "tag": "Level",
         "layer": 0,
         "isActive": true,
         "materialPaths": [],
         "materials": [],
         "localPosition": {
-            "x": -9.949999809265137,
+            "x": -10.100000381469727,
             "y": 0.0,
-            "z": -29.200000762939454
+            "z": -30.100000381469728
         },
         "localRotation": {
             "x": 0.0,
@@ -2411,7 +2411,7 @@
                 "customizedComponents": []
             },
             {
-                "name": "c-hunter 1",
+                "name": "c-hunter",
                 "prefabPath": "",
                 "meshPath": "",
                 "meshName": "",
@@ -2657,7 +2657,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.002/Bone.003/Bone.018",
+                                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.002/Bone.003/Bone.018",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -2802,7 +2802,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.002/Bone.003/Bone.019",
+                                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.002/Bone.003/Bone.019",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -2947,7 +2947,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.002/Bone.003/Bone.020",
+                                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.002/Bone.003/Bone.020",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -3092,7 +3092,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.002/Bone.003/Bone.021",
+                                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.002/Bone.003/Bone.021",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -3237,7 +3237,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.002/Bone.003/Bone.022",
+                                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.002/Bone.003/Bone.022",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -3390,7 +3390,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.013",
+                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.013",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -3535,7 +3535,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.014",
+                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.014",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -3680,7 +3680,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.015",
+                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.015",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -3825,7 +3825,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.016",
+                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.016",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -3970,7 +3970,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 1/Armature/root/Bone/body/Bone.017",
+                                                                        "value": "Level2/c-hunter/Armature/root/Bone/body/Bone.017",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -4603,7 +4603,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -4935,7 +4935,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -5179,7 +5179,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -5423,7 +5423,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -5667,7 +5667,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -5911,7 +5911,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -6155,7 +6155,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -6399,7 +6399,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 1/Armature/root",
+                                        "value": "Level2/c-hunter/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -6568,7 +6568,7 @@
                             {
                                 "name": "eyes",
                                 "type": "SceneRef",
-                                "value": "Level2/c-hunter 1/eyes",
+                                "value": "Level2/c-hunter/eyes",
                                 "objectRefPath": ""
                             },
                             {
@@ -6598,7 +6598,7 @@
                             {
                                 "name": "animator",
                                 "type": "SceneRef",
-                                "value": "Level2/c-hunter 1",
+                                "value": "Level2/c-hunter",
                                 "objectRefPath": ""
                             },
                             {
@@ -6692,7 +6692,7 @@
                 "customizedComponents": []
             },
             {
-                "name": "c-hunter 2",
+                "name": "c-hunter (1)",
                 "prefabPath": "",
                 "meshPath": "",
                 "meshName": "",
@@ -6938,7 +6938,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.002/Bone.003/Bone.018",
+                                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.002/Bone.003/Bone.018",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -7083,7 +7083,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.002/Bone.003/Bone.019",
+                                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.002/Bone.003/Bone.019",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -7228,7 +7228,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.002/Bone.003/Bone.020",
+                                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.002/Bone.003/Bone.020",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -7373,7 +7373,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.002/Bone.003/Bone.021",
+                                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.002/Bone.003/Bone.021",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -7518,7 +7518,7 @@
                                                                                     {
                                                                                         "name": "Root",
                                                                                         "type": "SceneRef",
-                                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.002/Bone.003/Bone.022",
+                                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.002/Bone.003/Bone.022",
                                                                                         "objectRefPath": ""
                                                                                     },
                                                                                     {
@@ -7671,7 +7671,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.013",
+                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.013",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -7816,7 +7816,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.014",
+                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.014",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -7961,7 +7961,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.015",
+                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.015",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -8106,7 +8106,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.016",
+                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.016",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -8251,7 +8251,7 @@
                                                                     {
                                                                         "name": "Root",
                                                                         "type": "SceneRef",
-                                                                        "value": "Level2/c-hunter 2/Armature/root/Bone/body/Bone.017",
+                                                                        "value": "Level2/c-hunter (1)/Armature/root/Bone/body/Bone.017",
                                                                         "objectRefPath": ""
                                                                     },
                                                                     {
@@ -8884,7 +8884,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -9216,7 +9216,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -9460,7 +9460,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -9704,7 +9704,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -9948,7 +9948,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -10192,7 +10192,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -10436,7 +10436,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -10680,7 +10680,7 @@
                                     {
                                         "name": "m_RootBone",
                                         "type": "SceneRef",
-                                        "value": "Level2/c-hunter 2/Armature/root",
+                                        "value": "Level2/c-hunter (1)/Armature/root",
                                         "objectRefPath": ""
                                     },
                                     {
@@ -10849,7 +10849,7 @@
                             {
                                 "name": "eyes",
                                 "type": "SceneRef",
-                                "value": "Level2/c-hunter 2/eyes",
+                                "value": "Level2/c-hunter (1)/eyes",
                                 "objectRefPath": ""
                             },
                             {
@@ -10879,7 +10879,7 @@
                             {
                                 "name": "animator",
                                 "type": "SceneRef",
-                                "value": "Level2/c-hunter 2",
+                                "value": "Level2/c-hunter (1)",
                                 "objectRefPath": ""
                             },
                             {
@@ -15832,6 +15832,35 @@
                         ]
                     }
                 ],
+                "customizedComponents": []
+            },
+            {
+                "name": "GameObject",
+                "prefabPath": "",
+                "meshPath": "",
+                "meshName": "",
+                "tag": "Respawn",
+                "layer": 0,
+                "isActive": true,
+                "materialPaths": [],
+                "materials": [],
+                "localPosition": {
+                    "x": 2.6600000858306886,
+                    "y": 0.0,
+                    "z": 8.350000381469727
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 88.2885971069336,
+                    "z": 0.0
+                },
+                "localScale": {
+                    "x": 1.4287534952163697,
+                    "y": 3.3333332538604738,
+                    "z": 1.6664186716079713
+                },
+                "children": [],
+                "components": [],
                 "customizedComponents": []
             }
         ],

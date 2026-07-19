@@ -12,6 +12,10 @@ TagManager:
   - BlockDoor
   - blockDoor
   - Level
+  - Door
+  - Complete
+  - Hunter
+  - SaloonDoor
   layers:
   - Default
   - TransparentFX

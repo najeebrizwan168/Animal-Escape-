@@ -165,12 +165,21 @@ public class HunterController : MonoBehaviour
                     Instantiate(particleSystem,col.transform.position,Quaternion.identity);
                     // Draw detection line in red for 2 seconds
                     Debug.DrawLine(eyes.position, col.transform.position, Color.red, 2.0f);
-                    
+                    if (UniversalSoundManager.Instance != null)
+            {
+                 Debug.Log("PLayed Sound.");
+                UniversalSoundManager.Instance.PlayHunterCapture(transform.position);
+                UniversalSoundManager.Instance.PlayAnimalCaptureSound(transform.position);
+            }
+
                     // Console log as requested
                     Debug.Log($"[Player Capture] Detected player '{col.name}' at angle {angle:F1}° (vision limit: {viewAngle/2f}°) inside view radius!");
                     Instantiate(AnimalCage,col.transform.position,Quaternion.identity);
                     
                     EngageTarget(col.transform);
+                    // Freeze the animal so it can't move after capture
+                    var animalCtrl = col.GetComponent<DogEscape.AnimalController>();
+                    if (animalCtrl != null) animalCtrl.Capture();
                     break; 
                 }
             }

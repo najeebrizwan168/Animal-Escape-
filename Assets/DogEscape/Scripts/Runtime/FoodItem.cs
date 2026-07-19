@@ -59,6 +59,11 @@ public class FoodItem : MonoBehaviour
     {
         hasBeenEaten = true;
 
+        if (UniversalSoundManager.Instance != null)
+        {
+            UniversalSoundManager.Instance.PlayFoodEatingSound(transform.position);
+        }
+
         // 1. Scale up the animal
         player.transform.localScale += sizeIncrease;
 

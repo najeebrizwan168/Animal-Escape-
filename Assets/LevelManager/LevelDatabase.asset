@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530026daa3ef6394e948303be42c52f4, type: 3}
   m_Name: LevelDatabase
   m_EditorClassIdentifier: Assembly-CSharp::LevelDatabase
-  allLevels: []
+  allLevels:
+  - levelNumber: 1
+    levelName: Level1
+    levelJsonReference:
+      m_AssetGUID: fdce138423bf2eb4d91638742e117eb9
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - levelNumber: 2
+    levelName: Level3
+    levelJsonReference:
+      m_AssetGUID: d6e2f2d033e99be46a730f157a282974
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0

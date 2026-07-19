@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 3659006812370854510}
   - component: {fileID: 5153550288528485575}
   - component: {fileID: 5633675944434456533}
+  - component: {fileID: 7361305127706338097}
   m_Layer: 0
   m_Name: penguin
   m_TagString: Player
@@ -972,6 +973,29 @@ MonoBehaviour:
   rotationSpeed: 720
   gravity: -20
   minDragDistance: 20
+--- !u!136 &7361305127706338097
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453697591147498964}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5666330723178592535
 GameObject:
   m_ObjectHideFlags: 0

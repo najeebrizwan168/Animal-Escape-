@@ -152,8 +152,27 @@ namespace DogEscape
                 animator.SetTrigger("Idle");
         }
 
+        private bool SafeCompareTag(GameObject go, string tagName)
+        {
+            try { return go != null && go.CompareTag(tagName); }
+            catch { return false; }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other != null && SafeCompareTag(other.gameObject, "Complete"))
+            {
+                Debug.Log("Complete");
+            }
+        }
+
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
+            if (hit != null && SafeCompareTag(hit.gameObject, "Complete"))
+            {
+                Debug.Log("Complete");
+            }
+
             Rigidbody body = hit.collider.attachedRigidbody;
 
             // No rigidbody or is kinematic

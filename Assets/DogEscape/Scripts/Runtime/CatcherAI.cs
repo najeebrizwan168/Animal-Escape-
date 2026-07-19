@@ -98,8 +98,7 @@ namespace DogEscape
                     break;
             }
         }
-
-        private void CheckSenses()
+     private void CheckSenses()
         {
             if (player == null) return;
 
@@ -117,7 +116,7 @@ namespace DogEscape
                 scentTimer += Time.deltaTime;
                 if (scentTimer >= scentAlertDelay)
                 {
-                    HearNoise(player.position); // Smells player, investigates position
+                    HearNoise(player.position); 
                 }
             }
             else
@@ -160,14 +159,13 @@ namespace DogEscape
             isWaiting = false;
         }
 
-        private void TriggerChase()
+      private void TriggerChase()
         {
             currentState = State.Chase;
             agent.speed = chaseSpeed;
             agent.isStopped = false;
             isWaiting = false;
         }
-
         private void PatrolUpdate()
         {
             if (patrolWaypoints.Length == 0)
@@ -266,11 +264,20 @@ namespace DogEscape
                     currentState = State.Patrol;
                 }
             }
-        }
+        } 
+    
 
-        private void CapturePlayer()
+       private void CapturePlayer()
         {
             Debug.Log("DOG CAPTURED! Game Over.");
+            
+            // 🎯 Foran capture sound play karo game over hone par!
+            if (UniversalSoundManager.Instance != null)
+            {
+                 Debug.Log("PLayed Sound.");
+                UniversalSoundManager.Instance.PlayHunterCapture(transform.position);
+            }
+
             // Reset player position or trigger Game Manager event
             if (player != null)
             {
